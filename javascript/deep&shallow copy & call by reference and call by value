@@ -1,0 +1,197 @@
+//shallow copy
+
+// shallow copy by assignment operator ('=') 
+
+// For Arrays
+// let friends1 = ["Alice", "Bob"];
+// let friends2 = friends1; // Shallow copy
+
+// friends1[0] = "Charlie";
+// console.log("friends1:", friends1); //output  ["Charlie", "Bob"]
+// console.log("friends2:", friends2); //output  ["Charlie", "Bob"]
+
+// // For Objects
+// let person1 = { name: "Alice", age: 30, address: { city: 'kolkata' } };
+// let person2 = person1; // Shallow copy
+
+// person1.age = 31;
+// person1.address.city = 'blr'
+// console.log("person1:", person1); //output { "name": "Alice", "age": 31,"address": {"city": "blr"}} 
+// console.log("person2:", person2); //output { "name": "Alice", "age": 31,"address": {"city": "blr"}}
+
+/*
+i) As you can see, modifying friends1 also changes friends2 because
+they both point to the same memory location, when we are assigning friends2=friends1 we are just assigning the
+memory location of friends1 to friends2, now both of them points to the same memory location. so if we modify friends1 it will
+also change the friends2 object data and vice sa versa.
+
+ii) As you can see, modifying person1 also changes person2 because
+they both point to the same memory location, when we are assigning person2=person1 we are just assigning the
+memory location of person1 to person2, now both of them points to the same memory location. so if we modify person1 it will
+also change the person2 object data and vice sa versa.
+
+iii) When you do let person2 = person1;
+ you are not creating a new copy of the person1 object, even for the primitive properties like name and age.
+ Instead, person2 becomes a reference to the exact same object in memory as person1.
+
+Think of it like this: person1 is a label attached to a specific box containing the data
+{ name: "Alice", age: 30, address:{city:'kolkata'} }. 
+When you do let person2 = person1; you're just attaching another label, person2, to that same box.
+
+Therefore:
+
+When you do person1.age = 31;, you are directly modifying the age property within that single box in memory.
+ Since person2 also points to this same box, when you log person2, you see the updated age.
+
+Similarly, person1.address.city = 'blr'; modifies the city property of the nested address object within that same original box.
+Again, because person2 references this same box, you see the updated city in person2 as well.
+
+The key takeaway here is that the assignment operator (=) for objects (and arrays) in JavaScript does not create a new object.
+ It creates a new variable that refers to the existing object. This is why changes made through one variable are reflected when
+ you access the object through the other variable.
+
+The behavior is different when you use the spread syntax (...) because the spread syntax does create a new object and copies
+the property values (or references for nested objects) into it.
+
+So, to reiterate:
+
+ let person2 = person1;: Creates a new reference to the same object.
+ let person2 = {...person1};: Creates a new object and performs a shallow copy of the properties.
+
+*/
+
+
+// shallow copy by using spread operator
+
+
+// For Arrays
+// let friends1 = ["Alice", "Bob"];
+// let friends2 = [...friends1]; // Shallow copy
+
+// friends1[0] = "Charlie";
+// console.log("friends1:", friends1); // Output: ["Charlie", "Bob"] 
+// console.log("friends2:", friends2); // Output: ["Alice", "Bob"] 
+
+// // For Objects
+// let person1 = { name: "Alice", age: 30, address:{city:'kolkata'} };
+// let person2 = {...person1}; // Shallow copy
+
+// person1.age = 31;
+// person1.address.city='blr'
+// console.log("person1:", person1); //output { "name": "Alice", "age": 31,"address": {"city": "blr"}} 
+// console.log("person2:", person2); //output { "name": "Alice", "age": 30,"address": {"city": "blr"}} 
+
+/*
+i) As you can see, modifying friends1 does not change friends2 because
+they both point to the different memory location, when we are assigning friends2=[...friends1] we are creating a new array with the
+same data present in friends1 , with a different memory location for friends2, now both of them points to the different memory
+location. so if we modify friends1 it will not change the friends2 data and vice sa versa.
+
+ii)As you can see, modifying person1 does not change person2 because
+they both point to the different memory location, when we are assigning person2=[...person1] we are creating a new object with the
+same data present in person1 , with a different memory location for person2, now both of them points to two different memory
+location. so if we modify person1 it will not change the person2 data and vice sa versa.
+
+iii) When you use the spread syntax {...person1}, you create a new object, person2.
+The properties of person1 are copied into this new person2 object.
+For the primitive properties like name (string) and age (number), the values are copied by value. This means person2.name gets its own copy of "Alice", and person2.age gets its own copy of 30. This is why person2.age remains 30 even after person1.age is changed to 31.
+However, the address property in person1 holds a reference to another object {city: 'kolkata'}. When the spread syntax copies this property, it copies the reference to this inner object, not the inner object itself.
+As a result, both person1.address and person2.address now point to the same memory location.
+When you do person1.address.city = 'blr', you are modifying the city property of that single shared inner address object. This change is reflected when you access person2.address because it's the same object.
+
+When you use the spread syntax (...person1) to create let person2 = {...person1};, you're essentially creating a shallow copy of the obj object.
+
+Primitive Properties are Copied by Value: For properties like name, which hold a primitive value (a string in this case), the spread syntax creates a brand new independent copy in the a object. So, when you do a.age = 31, you are only modifying the age property of the person1 object, and the age property of the person2 obj remains unchanged.
+
+Object Properties are Copied by Reference: However, the address property in person1 holds a reference to another object { city: 'kolkata',}. When the spread syntax encounters this, it copies the reference to this inner object into the a object. It does not create a completely new copy of the inner address object.
+
+Because both person1.address and preson2.address now point to the same underlying object in memory, when you modify a property within person1.address (like person1.address.city = 'blr'), you are directly changing that shared inner object. Consequently, when you log both person1 and person2, you see the updated city in both.
+
+In summary:
+
+The name property is a primitive, so it's copied by value, resulting in independent changes.
+The address property is an object, so its reference is copied. Both person1 and person2 end up pointing to the same address object, leading to changes in one being reflected in the other.
+If you wanted to make independent copies of the nested objects as well (a deep copy), you would need to use other techniques.
+
+
+*/
+
+
+//deepCopy
+
+// Deep Copy in JavaScript
+
+// To create a deep copy in JavaScript, you need to create a completely new object or array with the same values. Here are a couple of common ways:
+
+// JavaScript
+
+// // For Arrays (using the spread syntax or .slice())
+// let originalFriends = ["Alice", "Bob"];
+// let deepCopyFriends1 = [...originalFriends]; // Using spread syntax
+// let deepCopyFriends2 = originalFriends.slice(); // Using slice()
+
+// originalFriends[0] = "Charlie";
+// console.log("originalFriends:", originalFriends); // Output: originalFriends: [ 'Charlie', 'Bob' ]
+// console.log("deepCopyFriends1:", deepCopyFriends1); // Output: deepCopyFriends1: [ 'Alice', 'Bob' ]
+// console.log("deepCopyFriends2:", deepCopyFriends2); // Output: deepCopyFriends2: [ 'Alice', 'Bob' ]
+
+// // For Simple Objects (using the spread syntax or Object.assign())
+// let originalPerson = { name: "Alice", age: 30 };
+// let deepCopyPerson1 = { ...originalPerson }; // Using spread syntax
+// let deepCopyPerson2 = Object.assign({}, originalPerson); // Using Object.assign()
+
+// originalPerson.age = 31;
+// console.log("originalPerson:", originalPerson);   // Output: originalPerson: { name: 'Alice', age: 31 }
+// console.log("deepCopyPerson1:", deepCopyPerson1); // Output: deepCopyPerson1: { name: 'Alice', age: 30 }
+// console.log("deepCopyPerson2:", deepCopyPerson2); // Output: deepCopyPerson2: { name: 'Alice', age: 30 }
+
+//functions to use is structuredclone or json.stringfy()
+
+
+//call by value
+// Call by Value in JavaScript
+
+// JavaScript uses "call by value" for primitive data types (like numbers, strings, booleans, null, and undefined). When you pass a primitive value to a function, a copy of that value is created within the function's scope.
+
+// JavaScript
+
+// function changeValue(x) {
+//   x = 10;
+//   console.log("Inside function:", x); // Output: Inside function: 10
+// }
+
+// let num = 5;
+// changeValue(num);
+// console.log("Outside function:", num); // Output: Outside function: 5
+// Here, the value of num (5) is copied and passed to the changeValue function. The modification of x inside the function does not affect the original num.
+
+// call by reference 
+
+// Call by Reference (Behavior for Objects in JavaScript)
+
+// While JavaScript technically doesn't have "call by reference" in the same way as some other languages, when you pass objects (including arrays and functions) to a function, you are essentially passing a reference to that object. This means the function can modify the properties of the original object.
+
+
+// function changeObject(obj) {
+//   obj.age = 31;
+//   console.log("Inside function:", obj); // Output: Inside function: { name: 'Bob', age: 31 }
+// }
+
+// let person = { name: "Bob", age: 30 };
+// changeObject(person);
+// console.log("Outside function:", person); // Output: Outside function: { name: 'Bob', age: 31 }
+
+// function changeArray(arr) {
+//   arr.push("Charlie");
+//   console.log("Inside function:", arr); // Output: Inside function: [ 'Alice', 'Bob', 'Charlie' ]
+// }
+
+// let friends = ["Alice", "Bob"];
+// changeArray(friends);
+// console.log("Outside function:", friends); // Output: Outside function: [ 'Alice', 'Bob', 'Charlie' ]
+// In these examples, the changeObject and changeArray functions modify the original person object and friends array because they are working with a reference to that data.
+
+// So, in JavaScript:
+
+// Primitive types are passed by value (a copy is made).
+// Objects (including arrays and functions) are effectively passed by "reference" (the function receives a reference to the original object, allowing modifications).
