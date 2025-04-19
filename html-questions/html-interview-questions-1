@@ -1,13 +1,12 @@
 1)What is HTML?
 HTML stands for HyperText Markup Language. It is a standard text formatting language used for developing web pages released in 1993. HTML is a language that is interpreted by the browser and it tells the browser what to display and how to display.
 
-2)1. Can we display a web page inside a web page or Is nesting of webpages possible?
+2) Can we display a web page inside a web page or Is nesting of webpages possible?
 Yes, we can display a web page inside another HTML web page. HTML provides a tag <iframe> using which we can achieve this functionality.
 <iframe src=”url of the web page to embed” />
 
 3) What are Semantic Elements?
-Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like <form>, <table>, <article>, <figure>,
- etc., are semantic elements.
+Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like <form>, <table>, <article>, <figure>, etc., are semantic elements.
 
 4) What are tags and attributes in HTML?
 HTML tags are the building blocks of HTML. They are used to create elements and structure content on a web page. Tags are enclosed in angle brackets, For example, <p> for a paragraph. Most tags come in pairs: an opening tag <p> and a closing tag </p>, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, <p align=” center”>Interview questions</p>, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.
@@ -15,7 +14,10 @@ HTML tags are the building blocks of HTML. They are used to create elements and 
 5) What are void elements in HTML?
 HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
 
-6)
+6) What is the purpose of the rel attribute in a <link> tag?
+The rel attribute specifies the relationship between the current document and the linked resource. For example, rel=”stylesheet” indicates that the linked file is a CSS stylesheet.
+<link rel="stylesheet" href="styles.css">
+
 
 7). What is the ‘class’ attribute in HTML?
 The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements.
