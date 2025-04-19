@@ -89,6 +89,8 @@ Element: An element consists of a start tag, content, and an end tag. For exampl
 Block-level elements: These elements start on a new line and take up the full width of the screen available. Examples include <div>, <p>, and <h1> to <h6>.
 Inline elements: These elements do not start on a new line and only take up as much width as necessary. Examples include <span>, <a>, and <img>.
 
+
 18) ![alt text](image.png)
 19)![alt text](image-1.png)
 20)![alt text](image-2.png)
+21) ![alt text](image-3.png)
