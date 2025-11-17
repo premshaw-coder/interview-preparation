@@ -9,14 +9,17 @@ Yes, we can display a web page inside another HTML web page. HTML provides a tag
 Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like <form>, <table>, <article>, <figure>, etc., are semantic elements.
 
 4) What are tags and attributes in HTML?
-HTML tags are the building blocks of HTML. They are used to create elements and structure content on a web page. Tags are enclosed in angle brackets, For example, <p> for a paragraph. Most tags come in pairs: an opening tag <p> and a closing tag </p>, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, <p align=” center”>Interview questions</p>, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.
+HTML tags are the building blocks of HTML. They are used to create elements and structure content on a web page. Tags are enclosed in angle brackets,
+For example, <p> for a paragraph. Most tags come in pairs: an opening tag <p> and a closing tag </p>, whereas Attributes are used along with the HTML tags
+to define the characteristics of the element. For example, <p align=” center”>Interview questions</p>, in this the ‘align’ is the attribute using which we
+will align the paragraph to show in the center of the view.
 
 5) What are void elements in HTML?
 HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
 
 6) What is the purpose of the rel attribute in a <link> tag?
-The rel attribute specifies the relationship between the current document and the linked resource. For example, rel=”stylesheet” indicates that the linked file is a CSS stylesheet.
-<link rel="stylesheet" href="styles.css">
+The rel attribute specifies the relationship between the current document and the linked resource. For example, rel=”stylesheet” indicates that the linked file 
+is a CSS stylesheet. <link rel="stylesheet" href="styles.css">
 
 
 7). What is the ‘class’ attribute in HTML?
