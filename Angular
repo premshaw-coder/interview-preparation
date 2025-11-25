@@ -1,0 +1,115 @@
+SECTION 1 — BASIC ANGULAR INTERVIEW QUESTIONS
+1. What is Angular?
+2. Difference between Angular and AngularJS?
+3. What are Components?
+4. What is a Module (NgModule)?
+5. What is a Template?
+6. What is Data Binding? Types of Data Binding?
+7. What are Directives (Structural / Attribute)?
+8. What is Dependency Injection in Angular?
+9. What are Services?
+10. What are Pipes in Angular?
+11. What is Angular CLI?
+12. What is the difference between *ngIf, *ngFor, ngSwitch?
+13. What is interpolation vs property binding?
+14. What is Two-Way Binding?
+15. What is a lifecycle hook in Angular?
+16. What is ngOnInit()?
+17. What is Routing in Angular?
+18. What is HttpClientModule?
+19. What are Observables?
+20. What is the difference between Observable and Promise?
+
+SECTION 2 — INTERMEDIATE ANGULAR QUESTIONS
+21. Difference between Template-driven and Reactive Forms?
+22. What is FormGroup, FormControl, FormBuilder?
+23. How does Angular change detection work?
+24. What is ChangeDetectionStrategy.OnPush?
+25. What is zone.js and how Angular uses it?
+26. What are Guards (CanActivate, CanDeactivate)?
+27. What is lazy loading in Angular?
+28. How do you optimize Angular application performance?
+29. What is trackBy in *ngFor and why is it important?
+30. What is pure pipe vs impure pipe?
+31. What is ng-content (Content Projection)?
+32. What is ViewChild and ContentChild?
+33. What is difference between ViewEncapsulation shadow dom, none, emulated?
+34. What is ngDoCheck and why do we use it?
+35. What are RxJS operators?
+36. Difference between switchMap, mergeMap, concatMap, exhaustMap?
+37. What is Subject, BehaviorSubject, ReplaySubject?
+38. What is Error Handling in Angular? (HttpInterceptor, retry, catchError)
+39. What is HttpInterceptor and how it works internally?
+40. What is the difference between a pipe and an RxJS pipe?
+
+SECTION 3 — ADVANCED ANGULAR QUESTIONS
+41. What is Angular Ivy?
+42. What is change detection tree?
+43. How Angular compiles templates?
+44. What is difference between TemplateRef vs ViewRef vs EmbeddedViewRef?
+45. How does Angular bundle optimization work (ESBuild / Webpack)?
+46. What is a Standalone Component (Angular 15+)?
+47. Differences between Standalone vs NgModule-based Applications?
+48. How do signals work in Angular 16+?
+49. Signals vs RxJS — differences?
+50. What is hydration in Angular 17+? (SSR + CSR combined)
+51. What is Server-Side Rendering (Angular Universal)?
+52. What is Preloading Strategy in Angular routing?
+53. How do you implement infinite scroll with RxJS?
+54. What is incremental DOM?
+55. How does Angular detect changes without Zone.js (zone-less mode)?
+56. What is ControlValueAccessor? (Custom form control)
+57. How do you dynamically load components using ViewContainerRef?
+58. What is state management in Angular (NgRx, Akita, Signals-based stores)?
+59. What are custom directives and how do you write one?
+60. How does Angular handle async pipe internally?
+
+SECTION 4 — REAL-WORLD SCENARIO QUESTIONS
+
+These are questions that product companies like Google, Amazon, Flipkart, Paytm, Zomato ask.
+
+61. Suppose you have to show a feed like Instagram — how do you implement infinite scrolling?
+62. You have multiple API calls dependent on each other — how do you handle this using RxJS?
+63. How do you share data between unrelated components?
+64. How to design a reusable dynamic form engine?
+65. How do you handle very large forms in Angular?
+66. How do you upload files chunk-by-chunk (Google Drive style)?
+67. How do you cache API responses in Angular?
+68. How do you handle unauthorized user (401) globally using interceptor?
+69. How do you protect routes based on roles (RBAC)?
+70. How do you optimize Angular for Core Web Vitals (LCP, FID)?
+71. How do you integrate Angular with WebSockets?
+72. How do you design a multi-step form wizard?
+73. How do you handle errors in RxJS pipelines?
+74. How do you lazy load modules and components?
+75. How do you implement component-level caching?
+
+SECTION 5 — ARCHITECTURE-LEVEL QUESTIONS
+
+(These are asked in senior-level interviews.)
+
+76. What should be the folder structure for a large Angular project?
+77. How would you architect a scalable Angular application?
+78. How do feature modules and shared modules work together?
+79. Explain smart vs dumb components in Angular architecture.
+80. How to use a core module and why do we need it?
+81. What is the role of shared module?
+82. How do you isolate feature modules using unknown routes?
+83. How do you design a reusable UI library in Angular?
+84. How do you implement multi-tenancy (multiple domains) in Angular?
+85. How do you handle global state in large Angular apps? (NgRx, Signals, RxJS store)
+86. How do you design a custom change detection strategy?
+87. How do you structure API services to avoid duplication?
+88. How do you secure Angular architecture for enterprise apps? (CSP, sanitization)
+89. How do you implement SSR + CSR hydration (Angular 17)?
+90. How do you build a plugin system in Angular?
+91. How to write scalable route architecture with lazy modules?
+92. How do you handle file processing architecture in Angular (chunks, streams, readers)?
+93. How would you integrate micro-frontend architecture with Angular?
+94. What are design patterns you follow in Angular? (Strategy, Facade, Presenter, Repository Pattern)
+95. How do you separate domain layer, service layer, UI layer in Angular?
+96. How do you design a reusable authentication module?
+97. How do you prevent tight coupling between Angular components?
+98. How do you create a dynamic component loader (CMS style)?
+99. How do you design Angular guards architecture for RBAC?
+100. How do you design an error handling architecture for large applications?
