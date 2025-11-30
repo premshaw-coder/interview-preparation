@@ -1,0 +1,552 @@
+
+### **SECTION 1 — BASIC JAVASCRIPT & DATA TYPES**
+1. What are the different data types in JavaScript?
+2. What is the difference between `null` and `undefined`?
+3. What is the difference between `==` and `===`?
+4. What is the `typeof` operator? What is `typeof null`?
+5. What is `NaN`? How do you check if a value is `NaN`?
+6. What is the difference between `var`, `let`, and `const`?
+7. What is "Hoisting" in JavaScript?
+8. What is the difference between Global Scope and Local Scope?
+9. What is Template Literal?
+10. What is a "Primitive" vs "Reference" type?
+11. How do you copy an object? (Shallow vs Deep copy)
+12. What is Type Coercion? Give an example.
+13. What is strict mode (`'use strict'`)?
+14. What are "Falsy" values in JavaScript?
+15. How do you check if a variable is an Array?
+16. What is `JSON.parse()` and `JSON.stringify()`?
+17. What is the difference between `alert()`, `confirm()`, and `prompt()`?
+18. What is the difference between `window` and `document`?
+19. What is an "Immediately Invoked Function Expression" (IIFE)?
+20. What is a unary operator?
+
+### **SECTION 2 — FUNCTIONS, SCOPE & CLOSURES**
+21. What is the difference between Function Declaration and Function Expression?
+22. What is an Arrow Function? How is it different from a regular function?
+23. What is a "Callback Function"?
+24. What is a "Higher-Order Function"?
+25. What is a Closure? Give a practical example.
+26. What is the "Temporal Dead Zone" (TDZ)?
+27. What are "Default Parameters" in ES6?
+28. What is the `arguments` object? Does it work in arrow functions?
+29. What is Function Currying?
+30. What is a Pure Function?
+31. What is Recursion?
+32. What is `this` keyword? How does it change context?
+33. What are `call()`, `apply()`, and `bind()` methods?
+34. What is Method Chaining?
+35. What is a Constructor Function?
+36. What is the difference between parameter and argument?
+37. How do you handle variable number of arguments (Rest Parameter)?
+38. What is a Generator Function (`function*`)?
+39. What is a Decorator in JavaScript (concept)?
+40. Why are functions called "First-class Citizens" in JS?
+
+### **SECTION 3 — ARRAYS & OBJECTS**
+41. What is the difference between `map` and `forEach`?
+42. How does `filter()` work?
+43. What does `reduce()` do?
+44. Difference between `slice()` and `splice()`?
+45. How do you empty an array in JavaScript?
+46. What is the difference between `find()` and `findIndex()`?
+47. What is Object Destructuring?
+48. What is Array Destructuring?
+49. What is the Spread Operator (`...`)?
+50. What is the Rest Operator?
+51. How do you merge two objects? (`Object.assign` vs Spread)
+52. What is `Object.keys()`, `Object.values()`, `Object.entries()`?
+53. What is `Object.freeze()` vs `Object.seal()`?
+54. How do you check if a key exists in an object?
+55. What is Optional Chaining (`?.`)?
+56. What is Nullish Coalescing (`??`)?
+57. How do you remove duplicates from an array?
+58. What is `flat()` and `flatMap()`?
+59. How does the `sort()` method work? (Why does `[10, 2].sort()` fail?)
+60. What is an Iterable object?
+
+### **SECTION 4 — THE DOM & EVENTS**
+61. What is the DOM (Document Object Model)?
+62. What is the difference between `innerHTML` and `textContent`?
+63. What is Event Bubbling?
+64. What is Event Capturing?
+65. What is Event Delegation?
+66. What is `preventDefault()`?
+67. What is `stopPropagation()`?
+68. What is the difference between `target` and `currentTarget`?
+69. How do you create a new element in the DOM?
+70. What is the difference between `append()` and `appendChild()`?
+71. What are `data-` attributes?
+72. How do you get the position of an element (`getBoundingClientRect`)?
+73. What is the difference between `window.onload` and `DOMContentLoaded`?
+74. What is a "Shadow DOM"?
+75. What is `requestAnimationFrame`?
+76. How do you detect a click outside an element?
+77. What is a generic event listener?
+78. What is `localStorage` vs `sessionStorage` vs `cookies`?
+79. How do you observe changes in the DOM (`MutationObserver`)?
+80. How do you check if an element is visible in the viewport (`IntersectionObserver`)?
+
+### **SECTION 5 — ASYNCHRONOUS JAVASCRIPT**
+81. What is "Callback Hell"?
+82. What is a Promise?
+83. What are the states of a Promise?
+84. What is `Promise.all()`?
+85. What is `Promise.race()`?
+86. What is `Promise.allSettled()`?
+87. What is `Promise.any()`?
+88. What is `async` / `await`?
+89. How do you handle errors in Async/Await?
+90. What is the Event Loop?
+91. What is the Call Stack?
+92. What is the Task Queue (Callback Queue)?
+93. What is the Microtask Queue? Which has higher priority?
+94. What is `setImmediate` vs `setTimeout` vs `process.nextTick`?
+95. How does `setTimeout(fn, 0)` work?
+96. What is AJAX?
+97. What is the Fetch API?
+98. How do you cancel a fetch request (`AbortController`)?
+99. What is a Web Worker?
+100. How do you pause code execution in JavaScript?
+
+### **SECTION 6 — PROTOTYPES & OOP**
+101. What is Prototypal Inheritance?
+102. What is the Prototype Chain?
+103. What is `__proto__` vs `prototype`?
+104. What is `Object.create()`?
+105. What are ES6 Classes?
+106. What is `super` keyword?
+107. What are getters and setters?
+108. What are Static methods?
+109. How do you implement a Singleton pattern in JS?
+110. How do you implement Private variables in JS (Closures / `#private`)?
+111. What is "Polymorphism" in JS?
+112. What is Mixin?
+113. What is the difference between Class Inheritance and Prototypal Inheritance?
+114. How do you check instance type (`instanceof`)?
+115. What is `hasOwnProperty`?
+116. How do you implement "Method Overloading" in JS (since it doesn't exist natively)?
+117. What is the Factory Pattern?
+118. What is Composition vs Inheritance?
+119. How do you extend built-in objects (like Array)?
+120. What is `new.target`?
+
+### **SECTION 7 — ADVANCED ES6+ FEATURES**
+121. What is a Symbol?
+122. What is a Map? How is it different from an Object?
+123. What is a Set?
+124. What are WeakMap and WeakSet? Why use them?
+125. What is a Proxy object?
+126. What is the `Reflect` API?
+127. What are Tagged Templates?
+128. What is BigInt?
+129. What is the Logical Assignment Operator (`||=`, `&&=`, `??=`)?
+130. What is Dynamic Import (`import()`)?
+131. What is Top-level Await?
+132. What is `globalThis`?
+133. What is the `replaceAll` string method?
+134. What is `Object.fromEntries()`?
+135. What are JavaScript Modules (ESM)?
+136. What is `export default` vs `export const`?
+137. How does "Tree Shaking" work with ES Modules?
+138. What is `structuredClone()`?
+139. What is `Array.at()`?
+140. What is the Pipeline Operator (experimental `|>`)?
+
+### **SECTION 8 — JAVASCRIPT ENGINE & PERFORMANCE**
+141. How does the JavaScript Engine work (V8 architecture)?
+142. What is JIT (Just-In-Time) compilation?
+143. What is Memory Leak in JS? How to avoid it?
+144. What is Garbage Collection? How does it work (Mark and Sweep)?
+145. What causes a Stack Overflow?
+146. How do you measure performance in JS (`performance.now`)?
+147. What is Debouncing?
+148. What is Throttling?
+149. What is "Reflow" vs "Repaint"?
+150. How do you minimize DOM Reflows?
+151. Why is `documentFragment` used?
+152. What is "Virtual DOM" (conceptually)?
+153. How do you optimize loops in JS?
+154. What is "Inline Caching" in V8?
+155. Why should you avoid `with` statement?
+156. Why is `eval()` dangerous?
+157. What is Critical Rendering Path?
+158. How do you detect memory leaks using Chrome DevTools?
+159. What is the cost of Closures on memory?
+160. What is "Parsing" vs "Execution" of JS?
+
+### **SECTION 9 — TRICKY OUTPUT QUESTIONS (What is the output?)**
+161. `console.log(0.1 + 0.2 === 0.3)`?
+162. `console.log(1 + "1")` vs `console.log(1 - "1")`?
+163. `console.log([] + [])`?
+164. `console.log({} + [])`?
+165. `console.log(typeof NaN)`?
+166. `(function() { var a = b = 5; })(); console.log(b);`?
+167. `console.log(3 > 2 > 1)`?
+168. `console.log("5" - -"3")`?
+169. What happens when you access a variable before declaration (`let` vs `var`)?
+170. `console.log([1, 2, 3] + [4, 5, 6])`?
+171. `let a = [1, 2, 3]; a[10] = 99; console.log(a.length)`?
+172. `console.log(!+[]+[]+![])`?
+173. `console.log(Math.max())` vs `Math.min()`?
+174. `for(var i=0; i<3; i++) { setTimeout(() => console.log(i), 1) }`?
+175. How to fix the above loop to print 0, 1, 2?
+176. `console.log(1 < 2 < 3)` vs `console.log(3 > 2 > 1)`?
+177. `const obj = { a: 'one', b: 'two', a: 'three' }; console.log(obj)`?
+178. `console.log([..."Hello"])`?
+179. `console.log(10 || 20)` vs `console.log(0 || 20)`?
+180. `console.log(null ?? 'default')`?
+
+### **SECTION 10 — CODING CHALLENGES (ALGORITHMS)**
+181. How do you reverse a string without built-in methods?
+182. Check if a string is a Palindrome.
+183. Find the Factorial of a number using recursion.
+184. Implement a Fibonacci sequence generator.
+185. Find the largest number in an array.
+186. Find the second largest number in an array.
+187. How do you check if two strings are Anagrams?
+188. Flatten a nested array (without `.flat()`).
+189. Implement your own `map` method.
+190. Implement your own `filter` method.
+191. Implement your own `reduce` method.
+192. Implement a Debounce function.
+193. Implement a Throttle function.
+194. Deep clone an object without using JSON.stringify.
+195. Find the intersection of two arrays.
+196. Find the union of two arrays.
+197. Write a function to generate a random hex color.
+198. Write a function to shuffle a deck of cards.
+199. Count the occurrences of each character in a string.
+200. Implement Binary Search in JS.
+
+### **SECTION 11 — FUNCTIONAL PROGRAMMING**
+201. What is Functional Programming?
+202. What is Immutability?
+203. What are Side Effects?
+204. What is Function Composition?
+205. What is a Monad (concept)?
+206. What is Point-free style?
+207. What is a "Thunk"?
+208. Difference between Imperative and Declarative programming?
+209. What is Memoization?
+210. How do you implement a `memoize` function?
+211. What is Referential Transparency?
+212. What is Idempotence?
+213. What is a Functor?
+214. What is "Arity" of a function?
+215. What is Partial Application?
+216. How does Redux use functional concepts?
+217. Why avoid mutating state?
+218. What is the difference between `pipe` and `compose`?
+219. How to use `reduce` to build a pipeline?
+220. What is a Predicate function?
+
+### **SECTION 12 — BROWSER API & STORAGE**
+221. How do you use the Geolocation API?
+222. What is the History API (`pushState`, `replaceState`)?
+223. What is the Canvas API?
+224. What is `indexedDB`? How does it differ from LocalStorage?
+225. What is a Service Worker?
+226. What is the Cache API?
+227. What is the difference between Cookie, Session, and LocalStorage?
+228. How do you set a cookie with an expiration date?
+229. What is `HttpOnly` cookie?
+230. What is the Clipboard API?
+231. What is the Fullscreen API?
+232. How do you detect device orientation?
+233. What is the `Navigator` object?
+234. How do you detect if the browser is online/offline?
+235. What is Server-Sent Events (SSE)?
+236. What are WebSockets?
+237. How is WebSocket different from HTTP?
+238. What is `sendBeacon` used for?
+239. What is the Notification API?
+240. What is the File API (`FileReader`)?
+
+### **SECTION 13 — SECURITY IN JS**
+241. What is XSS (Cross-Site Scripting)?
+242. How do you prevent XSS in JS?
+243. What is CSRF (Cross-Site Request Forgery)?
+244. What is Clickjacking?
+245. What is CORS (Cross-Origin Resource Sharing)?
+246. What is a Preflight Request (OPTIONS)?
+247. What is CSP (Content Security Policy)?
+248. Why is `innerHTML` a security risk?
+249. How do you sanitize user input?
+250. What is Man-in-the-Middle (MITM) attack?
+251. How do you securely store JWT tokens?
+252. What is Same-Site cookie attribute?
+253. Why should you not store sensitive data in LocalStorage?
+254. What is "Prototype Pollution"?
+255. How do you prevent Prototype Pollution?
+256. What is Subresource Integrity (SRI)?
+257. What is "Tabnabbing"?
+258. How do you secure `postMessage`?
+259. What is a "Sandbox" attribute in Iframes?
+260. How do you implement Replay Attack protection?
+
+### **SECTION 14 — MODULES & TOOLING**
+261. What is Node.js?
+262. What is NPM vs Yarn vs PNPM?
+263. What is `package.json`?
+264. What is `package-lock.json`?
+265. What is Webpack?
+266. What are Loaders and Plugins in Webpack?
+267. What is Babel?
+268. What is a Polyfill?
+269. What is a Transpiler?
+270. What is ESLint?
+271. What is Prettier?
+272. What is Vite vs Webpack?
+273. What is Hot Module Replacement (HMR)?
+274. What is Tree Shaking?
+275. What is Code Splitting?
+276. What is "Bundle Size"?
+277. How do you analyze bundle size?
+278. What is CommonJS (`require`) vs ES Modules (`import`)?
+279. What is the `UMD` module pattern?
+280. What is Semantic Versioning (SemVer)?
+
+### **SECTION 15 — TESTING JAVASCRIPT**
+281. What is Unit Testing?
+282. What is Integration Testing?
+283. What is End-to-End (E2E) Testing?
+284. What is TDD (Test Driven Development)?
+285. What is BDD (Behavior Driven Development)?
+286. What is Jest?
+287. What is Mocha / Chai?
+288. What is Cypress / Playwright?
+289. How do you mock a function in Jest?
+290. What is Snapshot Testing?
+291. What is Code Coverage?
+292. How do you test asynchronous code?
+293. What is a "Spy"?
+294. What is a "Stub"?
+295. What is a "Mock"?
+296. How do you test the DOM without a browser (JSDOM)?
+297. What is "Flaky Test"?
+298. How do you test LocalStorage?
+299. How do you fake timers in tests?
+300. How do you test for accessibility (A11y)?
+
+### **SECTION 16 — DESIGN PATTERNS IN JS**
+301. What is the Module Pattern?
+302. What is the Revealing Module Pattern?
+303. What is the Observer Pattern?
+304. What is the Singleton Pattern?
+305. What is the Factory Pattern?
+306. What is the Prototype Pattern?
+307. What is the Decorator Pattern?
+308. What is the Facade Pattern?
+309. What is the Adapter Pattern?
+310. What is the Mediator Pattern?
+311. What is the Command Pattern?
+312. What is the Proxy Pattern?
+313. What is the Strategy Pattern?
+314. What is the Iterator Pattern?
+315. What is the MVC (Model-View-Controller) pattern in JS context?
+316. What is MVVM?
+317. What is Pub/Sub (Publisher/Subscriber)?
+318. What is Dependency Injection in JS?
+319. What is the State Pattern?
+320. What is the Builder Pattern?
+
+### **SECTION 17 — REGULAR EXPRESSIONS (REGEX)**
+321. How do you create a Regex in JS?
+322. What are flags in Regex (`g`, `i`, `m`)?
+323. What is `test()` method?
+324. What is `match()` method?
+325. What is `exec()` method?
+326. How do you validate an email using Regex?
+327. How do you replace text using Regex?
+328. What is a character class `[]`?
+329. What is a quantifier `+`, `*`, `?`?
+330. What are assertions `^`, `$`?
+331. What is a Lookahead assertion `(?=...)`?
+332. What is a Lookbehind assertion `(?<=...)`?
+333. How do you capture groups `(...)`?
+334. How do you escape special characters?
+335. What is the dot `.` operator?
+336. How do you match "only numbers"?
+337. What is greedy vs lazy matching?
+338. How do you extract the domain from a URL using Regex?
+339. How do you name capture groups?
+340. What is `search()` method?
+
+### **SECTION 18 — REAL-WORLD SCENARIOS & ARCHITECTURE**
+341. How do you build an infinite scroll feature?
+342. How do you implement a "Dark Mode" toggle?
+343. How do you build a multi-language (i18n) system in plain JS?
+344. How do you handle file uploads in JS?
+345. How do you create a drag-and-drop interface?
+346. How do you implement an Image Carousel?
+347. How do you implement an Autocomplete search?
+348. How do you handle "Back" button navigation in a Single Page App (SPA)?
+349. How do you implement client-side routing?
+350. How do you build a virtual list (for rendering 10k rows)?
+351. How do you capture errors globally (`window.onerror`)?
+352. How do you track user activity (analytics) without blocking the main thread?
+353. How do you implement a "Retry" logic for API calls?
+354. How do you detect an Ad Blocker?
+355. How do you print a specific part of the page?
+356. How do you generate a PDF from the DOM?
+357. How do you implement "Pull to Refresh"?
+358. How do you optimize image loading (Lazy Loading)?
+359. How do you share state between two browser tabs?
+360. How do you implement a Session Timeout timer?
+
+### **SECTION 19 — JS PUZZLES & OBSCURE FEATURES**
+361. What is the result of `[] == ![]`?
+362. What is the result of `NaN === NaN`?
+363. What is `Object.is()` vs `===`?
+364. Why is `Math.max() < Math.min()` true?
+365. What is the "Comma Operator"?
+366. What are "Label Statements" in loops?
+367. What is `void 0`?
+368. Can you break out of a `forEach` loop?
+369. How do you check if a function is a Generator?
+370. What are "Private Fields" in classes (`#name`)?
+371. What is the `with` statement (deprecated but good to know)?
+372. What happens if you add a property to a primitive string?
+373. What is `document.designMode`?
+374. How do you detect if code is running in an Iframe?
+375. What is the Maximum Call Stack size?
+376. What is `Proxy.revocable()`?
+377. What is the `debugger` statement?
+378. How do you make an object immutable?
+379. What is `Intl` API (Internationalization)?
+380. How do you format currency using JS (`Intl.NumberFormat`)?
+
+### **SECTION 20 — MODERN WEB APIS (2024+)**
+381. What is the View Transitions API?
+382. What is the Web Share API?
+383. What is the Broadcast Channel API?
+384. What is the ResizeObserver API?
+385. What is the Web Speech API?
+386. What is the Payment Request API?
+387. What is the Screen Wake Lock API?
+388. What is the Picture-in-Picture API?
+389. What is the Vibration API?
+390. What is the Battery Status API?
+391. What is the Bluetooth API (Web Bluetooth)?
+392. What is the File System Access API?
+393. What is the Geolocation API?
+394. What is the Network Information API?
+395. What is the `structuredClone` deep copy method?
+396. What is the `Dialog` element and API?
+397. What is the `Popsch` (Popover) API?
+398. What is the `Navigation` API (modern routing)?
+399. What is `CSS` Typed OM API in JS?
+400. What is the `EyeDropper` API?
+
+### **SECTION 21 — NODE.JS SPECIFIC (BACKEND JS)**
+401. What is non-blocking I/O?
+402. What is `module.exports` vs `exports`?
+403. What is `process.env`?
+404. What are Streams (Readable, Writable, Duplex, Transform)?
+405. What is the Buffer class?
+406. What is Event Emitter?
+407. How does Node handle child processes?
+408. What is `cluster` module?
+409. What is the difference between `readFile` and `readFileSync`?
+410. What is Middleware?
+411. How to handle uncaught exceptions in Node?
+412. What is `libuv`?
+413. What is the purpose of `global` object in Node?
+414. How to debug Node.js applications?
+415. What is REPL?
+416. What is `path` module?
+417. How do you verify password hashing (bcrypt)?
+418. What is `pm2`?
+419. How do you manage file uploads in Node (Multer)?
+420. What is the difference between `spawn` and `exec`?
+
+### **SECTION 22 — ALGORITHMIC THINKING IN JS**
+421. Write a function to convert Roman Numerals to Integer.
+422. Validate balanced parentheses `((()))`.
+423. Implement a Queue using Arrays.
+424. Implement a Stack using Arrays.
+425. Implement a Linked List in JS.
+426. Detect a cycle in a Linked List.
+427. Find the Longest Substring without repeating characters.
+428. Merge Sorted Arrays.
+429. Implement Binary Search Tree (BST).
+430. Traverse a Tree (BFS / DFS).
+431. Find the "Missing Number" in an array of 1 to 100.
+432. Rotate an array by K steps.
+433. Move all zeros to the end of an array.
+434. Calculate the power of a number using recursion.
+435. Check if a number is Prime.
+436. Generate all permutations of a string.
+437. Implement "Group By" function.
+438. Flatten an object (nested keys to dot notation).
+439. Implement an LRU Cache.
+440. Solving the "Two Sum" problem.
+
+### **SECTION 23 — SCENARIO: DEBUGGING & FIXING**
+441. Why is `this` undefined in my callback?
+442. Why is my API loop making only the last request? (Closure issue)
+443. Why is my array empty after `push` inside `forEach`? (Async issue)
+444. Why is `0.1 + 0.2` not equal to `0.3`?
+445. Why is my event listener firing twice?
+446. How to fix "Cross-Origin Request Blocked"?
+447. Why is my variable `undefined` even though I defined it? (Hoisting/Scope)
+448. Why does `typeof null` return "object"?
+449. Why is my UI freezing during a heavy calculation?
+450. Why does `isNaN("Hello")` return true?
+
+### **SECTION 24 — CODE QUALITY & BEST PRACTICES**
+451. Why prefer `const` over `let`?
+452. Why avoid global variables?
+453. When to use `switch` vs `if/else` vs Object map?
+454. Why use `===` instead of `==`?
+455. Why define functions at the bottom or separate files?
+456. How to comment code effectively (JSDoc)?
+457. Why use trailing commas?
+458. How to name variables (Boolean `isVisible`, Functions `getData`)?
+459. Why avoid nesting loops (Big O)?
+460. Why use Early Return pattern?
+
+### **SECTION 25 — THE IMPOSSIBLE / EXPERT QUESTIONS**
+461. How would you write your own Garbage Collector?
+462. How would you implement a JS engine from scratch?
+463. Explain the V8 optimization pipeline (Ignition & TurboFan).
+464. How to perform multithreading in JS without Web Workers? (Trick question)
+465. How to break the sandbox of a browser? (Security theory)
+466. Create a self-reproducing program (Quine) in JS.
+467. How to write a compiler in JavaScript?
+468. How to implement bitwise operators for permission systems?
+469. How to use `Atomics` and `SharedArrayBuffer`?
+470. How to implement a Blockchain in JS?
+471. How to render 3D graphics without WebGL (Raycasting)?
+472. How to create a Peer-to-Peer network in the browser (WebRTC data channels)?
+473. How to finger-print a browser user without cookies?
+474. How to detect if the user is using a VM or headless browser?
+475. How to implement a neural network in vanilla JS?
+476. How to optimize a recursive function to avoid stack overflow (Trampolining)?
+477. How to implement a custom Promise from scratch?
+478. How to implement `JSON.stringify` manually covering all edge cases?
+479. How to write a module bundler like Webpack from scratch?
+480. How to hack the Event Loop to prioritize your tasks?
+
+### **SECTION 26 — THE FINAL 20 (CULTURAL & SOFT SKILLS)**
+481. What is your favorite ES6 feature and why?
+482. `class` vs `function` — which do you prefer?
+483. How do you keep up with JavaScript updates?
+484. What is the "State of JS" survey?
+485. TypeScript vs JavaScript — when to use which?
+486. What was the hardest bug you solved in JS?
+487. How do you explain Closures to a 5-year-old?
+488. What libraries do you avoid and why?
+489. SPA vs MPA (Multi-Page App) — how to decide?
+490. What do you think about JQuery in 2025?
+491. How do you handle disagreements on Code Reviews?
+492. How do you mentor junior developers?
+493. React vs Angular vs Vue — your honest opinion?
+494. What is "JavaScript Fatigue"?
+495. How do you document your code?
+496. What is your approach to Refactoring legacy code?
+497. Tabs or Spaces? (Fun question)
+498. Semicolons or No Semicolons?
+499. How do you manage "Technical Debt"?
+500. Where do you see JavaScript in 5 years?
