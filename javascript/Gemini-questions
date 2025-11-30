@@ -1,0 +1,520 @@
+1. What is JavaScript?
+2. Difference between JavaScript and ECMAScript?
+3. What are JavaScript data types?
+4. What is the difference between var, let, and const?
+5. What is hoisting in JavaScript?
+6. What is the global execution context?
+7. What is the call stack?
+8. What is an execution context?
+9. What is lexical scope?
+10. What is scope chain?
+11. What is closure in JavaScript?
+12. Give an example of closure usage.
+13. What is the difference between == and ===?
+14. What is type coercion?
+15. What is NaN?
+16. How do you check if a value is NaN?
+17. What is undefined vs null?
+18. What is a primitive value?
+19. What is an object in JavaScript?
+20. What are arrays in JavaScript?
+21. What are array methods like map, filter, reduce?
+22. What is the difference between slice and splice?
+23. What is destructuring assignment?
+24. What is the rest operator?
+25. What is the spread operator?
+26. What is the this keyword?
+27. How does this behave in regular functions?
+28. How does this behave in arrow functions?
+29. What is bind()?
+30. What is call()?
+31. What is apply()?
+32. Difference between bind, call, apply?
+33. What are arrow functions?
+34. Why don’t arrow functions have this?
+35. What is a higher-order function?
+36. What is callback function?
+37. What is callback hell?
+38. What is a promise?
+39. What is async/await?
+40. What is promise chaining?
+41. What is promise.all?
+42. What is promise.race?
+43. What is promise.any?
+44. What is event loop?
+45. What is microtask queue?
+46. What is macrotask queue?
+47. What is setTimeout?
+48. What is setInterval?
+49. What is requestAnimationFrame?
+50. What is event delegation?
+51. What is bubbling?
+52. What is capturing?
+53. What is preventDefault()?
+54. What is stopPropagation()?
+55. What is stopImmediatePropagation()?
+56. What is DOM?
+57. What is BOM?
+58. Difference between HTMLCollection and NodeList?
+59. What is event.target?
+60. What is event.currentTarget?
+61. What is localStorage?
+62. What is sessionStorage?
+63. What is cookie?
+64. What is sameSite cookie attribute?
+65. What is CORS?
+66. What is SOP (Same-Origin Policy)?
+67. What is JSON?
+68. What is JSON.stringify?
+69. What is JSON.parse?
+70. What is a template literal?
+71. What are tagged template literals?
+72. What is Symbol in JavaScript?
+73. What are JavaScript prototypes?
+74. What is prototypal inheritance?
+75. What is **proto**?
+76. What is prototype property on functions?
+77. How does new keyword work?
+78. What is class syntax in JS?
+79. Difference between class and function constructors?
+80. What are getters/setters?
+81. What is static method?
+82. What is super keyword?
+83. What is the module system (import/export)?
+84. What is default export?
+85. What are named exports?
+86. What is dynamic import()?
+87. What is IIFE?
+88. What is currying?
+89. What is partial application?
+90. What is memoization?
+91. What is debouncing?
+92. What is throttling?
+93. What is functional programming?
+94. What are pure functions?
+95. What is immutability?
+96. What is referential transparency?
+97. What is a generator function?
+98. What is yield keyword?
+99. What is async generator?
+100. What is for await…of?
+
+---
+
+## **101–200**
+
+101. What are typed arrays?
+102. What is ArrayBuffer?
+103. What is DataView?
+104. What is Map?
+105. What is WeakMap?
+106. What is Set?
+107. What is WeakSet?
+108. What is difference between Map and WeakMap?
+109. What is difference between Set and WeakSet?
+110. What is BigInt?
+111. What is Intl API?
+112. What is eval()?
+113. Why is eval dangerous?
+114. What is with statement?
+115. Why is with discouraged?
+116. What is a polyfill?
+117. What is transpiling?
+118. What is Babel?
+119. What is Webpack?
+120. What is tree shaking?
+121. What is hoisting behavior for var?
+122. What is hoisting behavior for let?
+123. What is hoisting behavior for const?
+124. What are TDZ errors?
+125. What is typeof null returning "object"?
+126. What is an iterable?
+127. What is an iterator?
+128. What is Symbol.iterator?
+129. What is Symbol.asyncIterator?
+130. What is Object.assign?
+131. What is Object.keys?
+132. What is Object.values?
+133. What is Object.entries?
+134. What is Object.freeze?
+135. What is Object.seal?
+136. What is Object.preventExtensions?
+137. What is Proxy?
+138. What is Reflect API?
+139. What are ES6 modules?
+140. What is event loop starvation?
+141. What is heap vs stack memory?
+142. What is garbage collection?
+143. What is mark-and-sweep?
+144. What causes memory leaks in JavaScript?
+145. What is WeakRef?
+146. What is FinalizationRegistry?
+147. What is async stack trace?
+148. What are Web APIs?
+149. What is MessageChannel?
+150. What is postMessage API?
+151. What is web worker?
+152. What is shared worker?
+153. What is service worker?
+154. What is web socket?
+155. What is SSE (Server Sent Events)?
+156. What is Fetch API?
+157. Difference between fetch and XMLHttpRequest?
+158. What are fetch options?
+159. What is keepalive?
+160. What is same-origin cookie handling?
+161. What is AbortController?
+162. How do you cancel fetch request?
+163. What is ReadableStream?
+164. What is WritableStream?
+165. What is TransformStream?
+166. What is pipeline of streams?
+167. What is event target?
+168. What is custom event?
+169. What is dispatchEvent()?
+170. What is cloning objects shallow vs deep?
+171. Difference between JSON.parse cloning vs structuredClone?
+172. What is structuredClone()?
+173. What is deep copy?
+174. What is shallow copy?
+175. What is Object.create()?
+176. What is classical inheritance vs prototypal inheritance?
+177. What is instanceof?
+178. What is typeof?
+179. Difference between typeof and instanceof?
+180. How do you check if object is array?
+181. What is Array.isArray()?
+182. What is flattening arrays?
+183. What is array destructuring?
+184. What is object destructuring?
+185. What are optional chaining operators?
+186. What is nullish coalescing operator?
+187. Difference between || and ??
+188. What is short-circuit evaluation?
+189. What is bitwise operator?
+190. What is logical assignment operator?
+191. What is ?. operator?
+192. How does await work inside loops?
+193. What is top-level await?
+194. What is microtask checkpoint?
+195. What is promise.resolve?
+196. What is promise microtask priority?
+197. What is requestIdleCallback?
+198. What is setImmediate?
+199. What are web crypto APIs?
+200. What is TextEncoder/TextDecoder?
+
+---
+
+## **201–300**
+
+201. What is RegExp in JavaScript?
+202. What is regex literal syntax?
+203. What is regex constructor syntax?
+204. What are regex flags?
+205. What is regex global flag?
+206. What is sticky flag?
+207. What is unicode flag?
+208. What is lookahead?
+209. What is lookbehind?
+210. What is backreference?
+211. What is capturing group?
+212. What is non-capturing group?
+213. What is matchAll()?
+214. What is match()?
+215. What is exec()?
+216. What is replace()?
+217. What is replaceAll()?
+218. What is split()?
+219. What is search()?
+220. What causes regex catastrophic backtracking?
+221. What are tagged template literals in JS?
+222. What is Promise.resolve()?
+223. What is Promise.reject()?
+224. What is Promise.finally()?
+225. What happens when you return a promise inside promise callback?
+226. What is async function return type?
+227. What happens if async function throws?
+228. What is event loop tick?
+229. How does Node.js event loop differ from browser loop?
+230. What is call stack overflow?
+231. What are tail call optimizations?
+232. What is Temporal Dead Zone?
+233. Why is const not truly constant?
+234. What is dynamic typing?
+235. What is duck typing?
+236. What is hoisted function vs hoisted variable?
+237. Difference between function declaration and function expression?
+238. What is anonymous function?
+239. What are named function expressions?
+240. What is immediately invoked function expressions?
+241. What is new.target?
+242. What is function constructor?
+243. Why is function constructor insecure?
+244. What is performance.now()?
+245. What is console.time?
+246. How to measure JS performance?
+247. How to detect blocking main thread?
+248. What is microbenchmarking trap?
+249. What is bigint arithmetic?
+250. What is optional catch binding?
+251. What are static private fields?
+252. What are instance private fields?
+253. What is private method in JS class?
+254. What is super in class inheritance?
+255. What is extends keyword?
+256. What is mixin?
+257. How to implement mixins in JS?
+258. What is module aliasing?
+259. What is dynamic script loading?
+260. What is DOMContentLoaded?
+261. What is load event?
+262. What is beforeunload?
+263. What is unload event?
+264. Difference between bubbling and capturing phases?
+265. What is passive event listener?
+266. Why is passive: true useful?
+267. What is CSSOM?
+268. What is reflow?
+269. What is repaint?
+270. What is layout thrashing?
+271. What is event throttling?
+272. What is requestIdleCallback?
+273. What is micro-opt for loops?
+274. What is tail recursion?
+275. What is stack overflow in recursion?
+276. What is binary representation of numbers?
+277. Why JS floats are imprecise?
+278. How to fix floating precision problems?
+279. What is Number.EPSILON?
+280. What is isFinite()?
+281. What is isNaN()?
+282. What is parseInt?
+283. What is parseFloat?
+284. Difference between unary plus and Number()?
+285. What is valueOf()?
+286. What is toString()?
+287. What is toFixed?
+288. What is toPrecision?
+289. What is Math.random()?
+290. What is crypto.getRandomValues()?
+291. What is Math.floor vs Math.trunc?
+292. Why does 0.1 + 0.2 !== 0.3?
+293. What is Infinity?
+294. What is -Infinity?
+295. What is globalThis?
+296. What is window object?
+297. What is document object?
+298. What is navigator object?
+299. What is performance object?
+300. What is history API?
+
+---
+
+## **301–400**
+
+301. What is location object?
+302. What is fetch CORS error?
+303. What is preflight request?
+304. Why OPTIONS request happens?
+305. What are HTTP verbs supported by fetch?
+306. What is Promise constructor anti-pattern?
+307. What is async function misusage?
+308. What is array-like object?
+309. How to convert array-like to array?
+310. What is arguments object?
+311. What is strict mode?
+312. What changes in strict mode?
+313. What is octal literal?
+314. What is template tag security hole?
+315. What is HTML escaping?
+316. How to escape JavaScript template strings?
+317. What is script injection?
+318. What is XSS?
+319. What is CSP?
+320. How to mitigate XSS in JS?
+321. What is obfuscation?
+322. What is minification?
+323. What is bundling?
+324. Difference between bundling and code splitting?
+325. What is hot module replacement?
+326. What is ESBuild?
+327. What is rollup?
+328. What is snowpack?
+329. What is Vite?
+330. What is Node.js?
+331. Difference between Node.js and browser JS APIs?
+332. What is require()?
+333. What is module.exports?
+334. What is top-level await in Node.js?
+335. What is event emitter?
+336. What is buffer in Node.js?
+337. What is process.nextTick?
+338. What are Node.js streams?
+339. Difference between readStream and writeStream?
+340. What is cluster module?
+341. What is worker_threads module?
+342. What is V8 engine?
+343. What is hidden class?
+344. What is inline caching?
+345. What is deoptimization?
+346. What is Just-In-Time compilation?
+347. What are V8 optimizations?
+348. What triggers V8 deopt?
+349. What is object shape?
+350. Why should you avoid deleting object keys?
+351. Why should you avoid dictionary mode objects?
+352. What is polymorphism in JS?
+353. What is monomorphic function?
+354. What is megamorphic function?
+355. What is event loop starvation?
+356. What is tail call optimization?
+357. What is JIT warm-up?
+358. What is code deopt?
+359. What is full-codegen?
+360. How does V8 garbage collector work?
+361. What is generational GC?
+362. What is incremental GC?
+363. What is major GC?
+364. What is minor GC?
+365. What is event loop delay?
+366. How to detect memory leak?
+367. What is heap snapshot?
+368. What is CPU profiling?
+369. What is flame chart?
+370. Why is deep recursion bad?
+371. What is micro-optimization?
+372. Why is for loop faster than forEach?
+373. What is call-by-value vs call-by-reference confusion in JS?
+374. What is temporal dead zone?
+375. What is WeakMap leak prevention?
+376. What is functional composition?
+377. What is chainable API pattern?
+378. What is module pattern?
+379. What is revealing module pattern?
+380. What is singleton pattern?
+381. What is factory pattern?
+382. What is strategy pattern?
+383. What is proxy pattern?
+384. What is observer pattern?
+385. What is pub/sub?
+386. What is mediator pattern?
+387. What is decorator pattern?
+388. What is adapter pattern?
+389. What is facade pattern?
+390. What is builder pattern?
+391. What is command pattern?
+392. What is flyweight pattern?
+393. What is mixin pattern?
+394. What is pipeline operator?
+395. What is optional pipeline operator?
+396. What is do expression?
+397. What is pattern matching proposal?
+398. What is TC39?
+399. What are ECMAScript stages?
+400. What’s new in ES2024?
+
+---
+
+## **401–500**
+
+401. What is JS engine pipeline?
+402. What is AST (Abstract Syntax Tree)?
+403. How does JS compile before execution?
+404. What is parsing?
+405. What is tokenization?
+406. What is hoisting internally?
+407. How does V8 allocate memory?
+408. What is heap fragmentation?
+409. What is mark-and-sweep algorithm?
+410. What is stop-the-world GC?
+411. How do promises work internally?
+412. What is job queue?
+413. What is microtask checkpoint?
+414. What is event loop tick?
+415. What is DOM microtask?
+416. What is event source?
+417. How does addEventListener work internally?
+418. Why does JS run single-threaded?
+419. What is WebAssembly?
+420. How to load WASM in JS?
+421. What is shadow DOM in JS components?
+422. How do custom elements work?
+423. What is defineElement?
+424. What is observedAttributes?
+425. What is attributeChangedCallback?
+426. What is adoptedCallback?
+427. What is connectedCallback?
+428. How to create reusable web components?
+429. What is slot element?
+430. What is template element?
+431. Difference between innerHTML and textContent?
+432. Why is eval dangerous?
+433. What is CSP nonce?
+434. How to safely load dynamic scripts?
+435. How to securely embed user HTML?
+436. What is sanitization?
+437. What are DOMPurify libraries?
+438. What causes memory leaks in JS apps?
+439. What is closure leak?
+440. What is detached DOM node?
+441. How to detect leak in devtools?
+442. What is flamegraph?
+443. What is timeline recording?
+444. How to detect long tasks?
+445. What causes reflow thrashing?
+446. What are passive listeners?
+447. Why avoid synchronous XHR?
+448. What is performance bottleneck?
+449. How to optimize JS performance?
+450. What is debounce?
+451. What is throttle?
+452. What is requestAnimationFrame usage?
+453. Why is setInterval inaccurate?
+454. How to implement timer drift correction?
+455. What is event-driven programming?
+456. What are generators used for?
+457. How to write lazy iterators?
+458. What is recursion vs iteration tradeoff?
+459. How to detect infinite loops?
+460. What is tail call optimization?
+461. What is memoized recursion?
+462. Why is global namespace dangerous?
+463. What is IIFE usage?
+464. What is modular JS?
+465. How to isolate modules?
+466. What is cross-file import cycle?
+467. How to detect circular imports?
+468. What is bundler tree shaking?
+469. Why dynamic imports break tree shaking?
+470. What is dynamic runtime evaluation?
+471. What is function hoisting?
+472. What is class hoisting?
+473. Why class expressions are not hoisted?
+474. What is super keyword?
+475. What is static block?
+476. What is private field in class (#)?
+477. What is public class field?
+478. What is shallow comparison?
+479. What is deep comparison?
+480. How to detect equal objects?
+481. What is object hashing?
+482. What is referential equality?
+483. Why object keys become strings?
+484. What is Symbol.toStringTag?
+485. What is iterator protocol?
+486. What is async iterator protocol?
+487. What are memory-safe data structures?
+488. What is Map vs plain object performance?
+489. What is Set vs array performance?
+490. What is RegExp performance trap?
+491. Why avoid new Array(size)?
+492. What is sparse array?
+493. Why sparse arrays are bad?
+494. Why avoid delete arr[index]?
+495. Why avoid object de-optimizations?
+496. What makes code megamorphic?
+497. What is Object.assign performance cost?
+498. What is JSON.parse reviver?
+499. What is JSON.stringify replacer?
+500. What is structuredClone performance?
