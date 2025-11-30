@@ -1,0 +1,368 @@
+
+
+# ✅ **SECTION 6 — ADVANCED REAL-WORLD + ARCHITECTURE (101–200)**
+
+### **101–120: Change Detection & Rendering**
+
+101. Explain Angular's change detection cycle in detail.
+102. How does OnPush remove unnecessary re-renders?
+103. How do you manually trigger change detection?
+104. What is ChangeDetectorRef and how do you use it?
+105. What causes ExpressionChangedAfterItHasBeenCheckedError?
+106. How do you debug inconsistent change detection issues?
+107. How does Angular mark views dirty internally?
+108. What is a signal-based change detection without Zone.js?
+109. How do you detach and reattach change detectors?
+110. How do you detect changes triggered outside Angular (e.g., setTimeout)?
+111. What causes performance issues in templates?
+112. How do pipes help with change detection optimization?
+113. How does Angular batch DOM writes/reads behind the scenes?
+114. What is incremental hydration?
+115. What is selective hydration in Angular 17?
+116. How does Angular handle shadow DOM rendering?
+117. How are signals more predictable than RxJS in UI updates?
+118. How do template expressions impact change detection cost?
+119. How do *ngFor structural changes impact rendering performance?
+120. How do you measure FPS and rendering cost in Angular apps?
+
+---
+
+### **121–140: RxJS Expertise**
+
+121. How do cold vs hot observables behave in Angular?
+122. Why is switchMap the most common operator for HTTP calls?
+123. When to use exhaustMap in login forms?
+124. How do you cancel ongoing API calls?
+125. How does takeUntil help avoid memory leaks?
+126. How do you build a global RxJS error handling operator?
+127. How does shareReplay cache HTTP requests?
+128. How do you debounce API calls in search bars?
+129. What is backpressure and how do you handle it?
+130. How do you build an RxJS-based global event bus?
+131. How do you implement retry with exponential backoff?
+132. Difference between multicasting and broadcasting streams?
+133. What is a teardown logic in RxJS?
+134. How do schedulers affect observable execution?
+135. How do operators like bufferTime help with analytics batching?
+136. What is a ConnectableObservable?
+137. How do you debug RxJS memory leaks?
+138. How do auditTime and throttleTime differ?
+139. What is the difference between forkJoin, combineLatest, zip?
+140. How do you compose complex async workflows using RxJS?
+
+---
+
+### **141–170: Forms, Validation & UI Architecture**
+
+141. When do reactive forms outperform template-driven forms?
+142. How do you create custom async validators?
+143. How do you dynamically add/remove form fields?
+144. How do you validate deeply nested forms?
+145. What is the best architecture for multi-step forms?
+146. How do you auto-save forms using RxJS?
+147. How do you implement field-level permissions (RBAC)?
+148. How do you create custom form components using ControlValueAccessor?
+149. How do you implement complex conditional validation?
+150. How do you validate large forms without performance loss?
+151. How do you use Signals with forms?
+152. How do you handle form memory leaks?
+153. How do you decouple validation logic from UI?
+154. How do you build form builders for CMS-driven forms?
+155. How do you build reusable form layouts (address, contact, metadata)?
+156. How do you manage dirty/pristine states manually?
+157. Difference between valueChanges and statusChanges?
+158. How do you store form state in NgRx or Signals store?
+159. How do you sync form state with URL query parameters?
+160. How do you create multi-language form errors?
+
+---
+
+### **171–200: Angular Routing Power Techniques**
+
+171. What is the difference between canMatch and canLoad?
+172. How do you delay route activation until API resolves?
+173. How do you handle feature-based route isolation?
+174. Why should you avoid putting services inside lazy modules incorrectly?
+175. How do guards behave in SSR mode?
+176. How do you create dynamic multi-tenant routes?
+177. How do you pre-fetch data before entering a route?
+178. How do you implement router-level caching?
+179. How do you implement “pending state” in routes?
+180. How do you implement deep link resolution?
+181. How do you manage route-level providers?
+182. How do nested lazy modules work internally?
+183. How do you secure admin routes with role hierarchy?
+184. How do you build menu/navigation from backend-driven config?
+185. How do you detect route reuse and prevent reloading components?
+186. What is route serializer in NgRx Router Store?
+187. How do you animate route transitions?
+188. How do you track user navigation for telemetry?
+189. How do you lazy load standalone components optimally?
+190. How do you build plugin routes in micro-frontends?
+191. How do you implement canDeactivate with unsaved form detection?
+192. What is router-scroller and how do you use it?
+193. How do you reload the same route with new params?
+194. How do you implement a fallback route for 404/403/500?
+195. How do you create custom preloading strategies?
+196. What is route reuse strategy?
+197. How do you handle route-specific global state?
+198. How do you test Angular routes properly?
+199. How do you set up route animations without performance drops?
+200. How do you build a unified routing layout system (header, sidebar, shell)?
+
+---
+
+# ✅ **SECTION 7 — Angular Performance, Security & Optimization (201–300)**
+
+### **201–230: Performance Optimization**
+
+201. How do you detect memory leaks in Angular apps?
+202. How do you optimize *ngFor with immutability?
+203. How do you reduce bundle size in Angular 17?
+204. How do you use deferrable views effectively (`@defer`)?
+205. How does Angular preconnect/prefetch resources?
+206. How do you profile Angular CPU usage?
+207. How do you reduce change detection cycles?
+208. How do you offload work to Web Workers?
+209. How do you optimize image loading?
+210. How do you lazy load scripts/services based on user context?
+211. How do you split app into domains for better build times?
+212. How do signals improve UI performance?
+213. How do you improve scroll performance?
+214. How do you optimize rendering large lists (virtual scroll)?
+215. How do you reduce TTI (time-to-interactive)?
+216. How do you optimize Angular for mobile performance?
+217. How to perfect Lighthouse score for Angular apps?
+218. How do you use PWA caching strategies?
+219. How do you optimize SSR hydration mismatches?
+220. How do you reduce JavaScript execution time?
+
+---
+
+### **231–260: Security & Hardening**
+
+231. How do you enable CSP in Angular apps?
+232. How do you prevent XSS attacks?
+233. How do you use DomSanitizer safely?
+234. How do you secure Angular routing?
+235. How do you prevent CSRF?
+236. How do you secure OAuth tokens?
+237. How do you defend against clickjacking?
+238. How do you secure localStorage vs sessionStorage?
+239. How do you verify JWT signature expiry on client?
+240. How do you secure micro-frontends with SSO?
+241. How do you rotate JWT tokens?
+242. How do you handle refresh token theft?
+243. What are dangerous Angular APIs that cause XSS?
+244. How do you guard against unsafe HTML injection?
+245. How do you enforce strict Angular compiler flags for safety?
+246. How do you sanitize upload file content?
+247. How do you securely load remote components?
+248. How do you secure multi-tenant apps?
+249. How do you implement permission-based UI element hiding?
+250. How do you secure error logs from leaking PII?
+
+---
+
+### **261–300: Build, Deploy, CI/CD**
+
+261. How does Angular CLI optimize builds?
+262. How do you reduce build times in monorepos?
+263. How does incremental build caching work?
+264. How do you customize Angular builder?
+265. Differences between production vs development builds?
+266. How do you enable source-map based production debugging securely?
+267. How do you run Angular inside Docker?
+268. How do you deploy Angular to AWS CloudFront?
+269. How do you deploy Angular SSR on Firebase/Netlify/Vercel?
+270. How do you automate environment injection during CI?
+271. How do you handle .env in Angular?
+272. How do you manage versioning of large Angular apps?
+273. How do you structure environment-based feature flags?
+274. How do you automate i18n translation builds?
+275. How do you pre-render pages with Angular Universal?
+276. What is builder API in Angular CLI?
+277. How do you write custom esbuild plugins?
+278. How do you optimize caching headers for Angular apps?
+279. How do you bundle Angular libraries with ng-packagr?
+280. How do you analyze bundle using source-map explorer?
+281. How do you handle blue-green deployments for Angular?
+282. How do you set up CI pipelines for Nx + Angular?
+283. How do you detect unused imports/code automatically?
+284. How do you build Angular libraries in a monorepo?
+285. How do you publish Angular component libraries on npm?
+286. How do you automate visual regression testing?
+287. How do you ensure SSR compatibility in CI?
+288. How do you write build-time code transformers?
+289. How do you use Angular builder hooks?
+290. How do you compress assets (brotli vs gzip)?
+291. How do you create custom Angular schematics?
+292. How do you run e2e tests on real devices?
+293. How do you run SSR load-testing?
+294. How do you implement SSG (static site generation)?
+295. How do you bundle micro-frontends for production?
+296. How do you manage polyfills for modern browsers?
+297. How do you guard Angular builds against supply-chain attacks?
+298. How do you create multi-region deployments?
+299. How do you automate health-check endpoints for Angular SSR?
+300. How do you enforce build consistency across teams?
+
+---
+
+# ✅ **SECTION 8 — Huge List of System Design Questions (301–400)**
+
+### **301–330: System Design**
+
+301. How do you architect a high-scale Angular dashboard?
+302. How do you design a real-time notification system?
+303. How do you handle 10,000+ concurrent WebSocket updates?
+304. How do you design a modular enterprise-grade Angular project?
+305. How do you implement A/B testing in Angular?
+306. How do you integrate Angular with feature-flag platforms?
+307. How do you hydrate Angular state from server-rendered JSON?
+308. How do you create domain-driven modules?
+309. How do you structure bounded contexts in Angular?
+310. How do you design a CMS-driven UI architecture?
+311. How do you design a state synchronization layer for micro-frontends?
+312. How do you design Angular for hybrid apps (Capacitor)?
+313. How do you design a plugin marketplace (plugins load dynamically)?
+314. How do you design Angular apps for offline-first use?
+315. How do you design an audit-trail tracking system?
+316. How do you implement optimistic UI updates?
+317. How do you design pagination for large datasets?
+318. How do you design resumable uploads?
+319. How do you sync state across tabs?
+320. How do you design domain event listeners?
+321. How do you design API throttling & debouncing in Angular?
+322. How do you design real-time collaborative editing?
+323. How do you design scroll-driven UI interactions?
+324. How do you design push-based rendering via Signals?
+325. How do you design multi-tenant theming architecture?
+326. How do you design API gateways for Angular apps?
+327. How do you design distributed logging for Angular?
+328. How do you design product-level analytics tracking?
+329. How do you design UI configuration from backend JSON?
+330. How do you design client-first encryption in Angular?
+
+---
+
+# ✅ **SECTION 9 — Advanced Architectures, Patterns, Anti-patterns (401–470)**
+
+### **401–420: Architecture**
+
+401. How do you implement presenter pattern?
+402. How do you implement façade pattern?
+403. What is an adapter pattern in Angular data layer?
+404. What is repository pattern in Angular?
+405. How do you split code into domain, application, UI layers?
+406. How do you make API services fully testable?
+407. How do you enforce boundary rules between modules?
+408. What is component-level dependency isolation?
+409. How do you limit service scope using injectors?
+410. How do you enforce immutability across Angular project?
+411. How do you publish and reuse UI components across apps?
+412. How do you enforce linter rules for architecture?
+413. What are Angular anti-patterns you should avoid?
+414. Why is service locator an anti-pattern?
+415. How do you prevent circular dependencies?
+416. How do you logically group domain-driven modules?
+417. How do you prevent business logic leaking into components?
+418. How do you build a robust API abstraction layer?
+419. How do you handle cross-cutting concerns using interceptors?
+420. How do you enforce architectural decisions at CI level?
+
+---
+
+### **421–450: Micro-Frontends Advanced**
+
+421. How do you share libraries safely across MFEs?
+422. How do you manage version mismatch between MFEs?
+423. How do you sandbox unsafe MFEs?
+424. How do you implement federation of Angular signals between MFEs?
+425. How do you detect remote module load failures?
+426. How do you rollback remote MFEs?
+427. How do you share authentication across MFEs?
+428. How do you handle navigation between MFEs?
+429. How do you isolate styles between MFEs?
+430. How do you share state between MFEs?
+431. How do you load remote entries from runtime config?
+432. How do you detect remoteEntry corruption?
+433. How do you lazy-load micro frontends based on user role?
+434. How do you analyze performance impact of MFEs?
+435. How do you embed legacy apps inside Angular MFE shell?
+436. How do you gracefully degrade when remote MFEs fail?
+437. How do you test MFEs independently?
+438. How do you support rollback (previous remote entry)?
+439. How do you version shared UI libraries for MFEs?
+440. How do you use Module Federation in SSR?
+441. How do you share signals across remote applications?
+442. How do you handle CDN caching of remoteEntry.js?
+443. How do you detect MFE loading via analytics?
+444. How do you dynamically load 3rd-party plugins at runtime?
+445. How do you secure remote MFEs?
+446. How do you prevent CSS bleed between MFEs?
+447. How do you lazy load MFEs in route + widget mode?
+448. How do you build fallback UI for failed MFEs?
+449. How do you integrate Angular MFEs with React/Vue MFEs?
+450. How do you design API contracts between shell and MFEs?
+
+---
+
+### **451–470: Testing & Quality**
+
+451. How do you write unit tests for OnPush components?
+452. How do you mock Angular services using TestBed?
+453. How do you test RxJS pipelines?
+454. How do you test components with asynchronous behavior?
+455. How do you test dynamic component creation?
+456. How do you mock HttpClient in tests?
+457. How do you test Route Guards?
+458. How do you integrate Cypress with Angular?
+459. How do you test standalone components?
+460. How do you test signals?
+461. How do you test performance regressions?
+462. How do you test micro-frontends independently?
+463. How do you perform contract testing for Angular services?
+464. What is snapshot testing in Angular?
+465. How do you measure test coverage?
+466. How do you test SSR Angular apps?
+467. How do you test lazy-loaded modules?
+468. How do you test complex forms?
+469. How do you test component hydration?
+470. How do you prevent flaky tests in Angular?
+
+---
+
+# ✅ **SECTION 10 — Final 30 Extremely Hard Senior-Level Questions (471–500)**
+
+471. Explain the full lifecycle of Angular rendering from template → IR → DOM.
+472. How does the Angular compiler decide which components to tree-shake?
+473. How does Angular serialize views for hydration?
+474. How does Angular manage DI scopes internally?
+475. What does “injection bloom filter” mean in Angular DI?
+476. How does Angular resolve providers in nested injectors?
+477. How does Angular reconcile DOM during hydration mismatches?
+478. How does Angular bundle partial hydration boundaries?
+479. How does Angular track dirty checks at component level?
+480. How does Angular reuse views in structural directives internally?
+481. What is the lifecycle of an Observable inside Angular template?
+482. How does Angular decide which signals to subscribe to?
+483. How does Angular optimize signal-job batching?
+484. Explain Angular’s `ɵɵelementStart` internal instructions.
+485. How does Angular SSR handle streaming responses?
+486. How does Angular compile standalone components differently from NgModule apps?
+487. How do you design a custom SSR renderer?
+488. How do you implement Zones alternative (manual CD)?
+489. How does the Angular router compute segment matches?
+490. What is primary vs secondary router outlet behavior internally?
+491. How does Angular template caching work?
+492. How does Angular linker resolve NgModules in libraries?
+493. How does Angular CDN differential loading work now?
+494. How do you handle extremely large component trees (5k+ nodes)?
+495. How does Angular merge multiple event listeners in template output?
+496. How do you customize build pipeline to inject runtime ENV?
+497. How does Angular handle hydration of *ngFor nodes?
+498. How do you optimize Angular’s DI for micro-frontend boundaries?
+499. How do you inspect Angular’s internal instructions using debug tools?
+500. Explain the full rendering pipeline of Angular from template → IVY → runtime → DOM → hydration.
+
