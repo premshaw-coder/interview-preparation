@@ -113,3 +113,433 @@ SECTION 5 — ARCHITECTURE-LEVEL QUESTIONS
 98. How do you create a dynamic component loader (CMS style)?
 99. How do you design Angular guards architecture for RBAC?
 100. How do you design an error handling architecture for large applications?
+
+### **SECTION 6 — DEEP DIVE INTO ANGULAR SIGNALS (Modern Angular)**
+101. What is the difference between `signal()` and `computed()`?
+102. How does `effect()` work in Signals and when should you use it?
+103. Why does Angular warn against setting signals inside `computed()`?
+104. How do you migrate a component from `Zone.js` to `Zoneless` using Signals?
+105. What is the difference between `input()` (Signal Input) and `@Input()`?
+106. How do `model()` inputs work for two-way binding with Signals?
+107. Can you use RxJS Observables inside `computed()` signals?
+108. What is `toSignal()` and `toObservable()`?
+109. How does `untracked()` work inside an effect?
+110. Explain the "glitch-free" property of Signals.
+111. How do you handle asynchronous data loading using Signals?
+112. How do you replace an `async` pipe with Signals?
+113. What is the performance benefit of Signals over `ChangeDetectorRef`?
+114. How do you structure a global store using only Signals?
+115. What are the limitations of Signals compared to RxJS streams?
+116. How do you test a component that heavily uses Signals?
+117. How does Signal equality check work by default?
+118. How do you define a custom equality function for a Signal?
+119. What happens if you update a Signal inside an `ngOnChanges` hook?
+120. How do Signals integrate with Angular Forms?
+121. How do you prevent infinite loops in `effect()`?
+122. Can you use Signals in services without components?
+123. How do Signals impact the `OnPush` change detection strategy?
+124. What is the `readonly` signal interface?
+125. How do you debug Signal updates in DevTools?
+
+### **SECTION 7 — ADVANCED RxJS & REACTIVE PROGRAMMING**
+126. What is the difference between Hot and Cold Observables?
+127. Explain the "Marble Diagram" for `combineLatest`.
+128. What is the difference between `forkJoin` and `zip`?
+129. How does `shareReplay(1)` work to prevent duplicate HTTP calls?
+130. What is the difference between `throttleTime` and `debounceTime`?
+131. When would you use `auditTime` over `debounceTime`?
+132. How do you create a custom RxJS operator?
+133. What is the purpose of `distinctUntilChanged()`?
+134. How do you handle race conditions using `switchMap`?
+135. What is the difference between `take(1)` and `first()`?
+136. How do you use `expand` for recursive API polling?
+137. How do you implement "exponential backoff" for retrying failed requests?
+138. What is `withLatestFrom` and how does it differ from `combineLatest`?
+139. How do you properly unsubscribe from Observables? (takeUntil, AsyncPipe, DestroyRef)
+140. What is the `finalize` operator used for?
+141. How do you unit test an RxJS marble stream?
+142. What is `scheduled` and `observeOn` in RxJS scheduling?
+143. How do you mock an HTTP delay using RxJS?
+144. What is the `startWith` operator useful for in UI loading states?
+145. How do you handle multiple error scenarios in a single stream using `catchError`?
+146. What is the difference between `Subject` and `AsyncSubject`?
+147. How do you implement a global event bus using RxJS?
+148. What is `pairwise` and how is it used for previous/current value comparison?
+149. How do you implement a "Typeahead" search with RxJS?
+150. Why should you avoid nested subscriptions?
+
+### **SECTION 8 — PERFORMANCE OPTIMIZATION**
+151. How do you analyze an Angular bundle using `webpack-bundle-analyzer` or `source-map-explorer`?
+152. What is "Tree Shaking" and how does Angular CLI perform it?
+153. How do you lazy load non-routable modules or components?
+154. What is the difference between `preload` and `prefetch` resources?
+155. How do you optimize `ngFor` with large datasets (Virtual Scrolling)?
+156. What is `runOutsideAngular` and when should you use it?
+157. How do you defer the loading of heavy libraries (e.g., Chart.js) until needed?
+158. What is the impact of excessive DOM manipulation in Angular?
+159. How do you use Web Workers in Angular for heavy computations?
+160. How do you optimize CSS/SCSS critical rendering path in Angular?
+161. What is the difference between `markForCheck` and `detectChanges`?
+162. How does `ChangeDetectionStrategy.Default` cause performance bottlenecks?
+163. How do you use the `@defer` block in Angular 17 templates?
+164. What are the triggers (`on idle`, `on viewport`, `on interaction`) for `@defer`?
+165. How do you prevent memory leaks in Angular directives?
+166. How does image optimization (`NgOptimizedImage`) work?
+167. How do you reduce the Time to First Byte (TTFB) in SSR?
+168. How do you implement caching for static assets in Angular PWA?
+169. What is "Budget" in `angular.json` and how do you configure it?
+170. How do you profile Angular change detection cycles using Chrome DevTools?
+171. How do you optimize font loading in Angular?
+172. What are the performance costs of using many `HostListener` events?
+173. How do you optimize SVG usage in Angular templates?
+174. How does "Dead Code Elimination" work in the build process?
+175. How do you minimize the main thread work during hydration?
+
+### **SECTION 9 — ANGULAR FORMS (Advanced & Custom)**
+176. How do you create a custom Form Validator?
+177. How do you create an Async Validator?
+178. What is the difference between `setValue` and `patchValue`?
+179. How do you reset a form without triggering validation errors?
+180. How do you implement a "Confirm Password" cross-field validator?
+181. How do you dynamically add/remove `FormArray` controls?
+182. How do you build a custom input component implementing `ControlValueAccessor`?
+183. What is the difference between `touched`, `dirty`, and `pristine`?
+184. How do you handle form submission with `updateOn: 'blur'`?
+185. How do you split a large form into multiple child components?
+186. How do you validate a file upload input (size/type)?
+187. How do you debounce key strokes in a Reactive Form input?
+188. How do you strictly type Reactive Forms (Angular 14+)?
+189. How do you map server errors to specific form controls?
+190. How do you disable a form control based on another control's value?
+191. What is the `NonNullableFormBuilder`?
+192. How do you implement a "Wizard" style form with validation at each step?
+193. How do you handle dynamic validation rules loaded from an API?
+194. How do you test Reactive Forms with Jest/Jasmine?
+195. How do you use `statusChanges` observable effectively?
+196. How do you implement a custom `MatFormFieldControl` (Angular Material)?
+197. How do you persist form state to LocalStorage (auto-save)?
+198. How do you create a recursive form (e.g., nested comments/folders)?
+199. How do you handle dependent dropdowns (Cascading Selects)?
+200. How do you implement "Dirty Form Guard" (prevent navigation if unsaved)?
+
+### **SECTION 10 — TESTING (Unit & E2E)**
+201. What is the difference between `TestBed` and standard class instantiation?
+202. How do you mock a service in an Angular unit test?
+203. What is the difference between `SpyOn` and `createSpyObj`?
+204. How do you test asynchronous code using `fakeAsync` and `tick`?
+205. What is the purpose of `waitForAsync`?
+206. How do you test a component with `@Input()` and `@Output()`?
+207. How do you find elements in the DOM using `By.css` vs `By.directive`?
+208. How do you test an `HttpInterceptor`?
+209. How do you test a Route Guard?
+210. How do you unit test a Pipe?
+211. What is "Harness" in Angular Material testing?
+212. How do you test `OnPush` components?
+213. How do you test Observable streams (Marbles)?
+214. What is the difference between Shallow Testing and Deep Testing?
+215. How do you create a custom generic mock helper?
+216. How do you test code inside `ngOnInit` vs constructor?
+217. How do you use Cypress for Angular E2E testing?
+218. How do you mock API responses in Cypress?
+219. How do you measure code coverage in Angular?
+220. How do you test content projection (`ng-content`)?
+221. How do you test attribute directives?
+222. How do you use `ComponentFixtureAutoDetect`?
+223. How do you test dynamic component loading?
+224. How do you mock the `Router` and `ActivatedRoute`?
+225. How do you test signal-based components?
+
+### **SECTION 11 — SECURITY**
+226. What is XSS (Cross-Site Scripting) and how does Angular prevent it?
+227. What is `DomSanitizer` and when should you use `bypassSecurityTrustHtml`?
+228. What is CSRF (Cross-Site Request Forgery) and how to handle it in Angular?
+229. How do you secure JWT tokens in the browser (LocalStorage vs HttpOnly Cookies)?
+230. How do you implement a Route Guard for Role-Based Access Control (RBAC)?
+231. How do you hide specific DOM elements based on user permissions?
+232. What is Content Security Policy (CSP) and how does Angular support it?
+233. How do you prevent "Open Redirect" vulnerabilities in Angular?
+234. How do you handle sensitive data in route parameters?
+235. Why is it dangerous to use `innerHTML`?
+236. How do you implement an Auto-Logout timer?
+237. How do you secure HTTP Interceptors?
+238. How do you handle Refresh Tokens seamlessly?
+239. What is the "Auth Code Flow with PKCE"?
+240. How do you prevent Clickjacking in Angular apps?
+241. How do you sanitize styles and URLs?
+242. How do you audit your Angular dependencies for vulnerabilities (`npm audit`)?
+243. How do you obfuscate Angular code for production?
+244. How do you implement 2FA (Two-Factor Auth) UI logic?
+245. How do you securely handle API keys in frontend (trick question)?
+246. How do you implement "Session Storage" vs "Local Storage" security?
+247. What is the risk of using `eval()` in Angular?
+248. How do you validate inputs to prevent Injection attacks?
+249. How do you implement a "Honeypot" for bot prevention in forms?
+250. How do you secure WebSocket connections (WSS)?
+
+### **SECTION 12 — ANGULAR UNIVERSAL (SSR) & HYDRATION**
+251. What is the difference between Server-Side Rendering (SSR) and Client-Side Rendering (CSR)?
+252. What is Prerendering (SSG) vs SSR?
+253. How do you fix "Window is not defined" error in SSR?
+254. What is the `TransferState` API in Angular?
+255. How does Non-Destructive Hydration work in Angular 17+?
+256. How do you handle cookies on the server side in Angular Universal?
+257. How do you create an `APP_INITIALIZER` that works in SSR?
+258. How do you detect if code is running on the Browser or Server (`isPlatformBrowser`)?
+259. What are the SEO benefits of Angular Universal?
+260. How do you handle HTTP requests in SSR to avoid duplication on the client?
+261. How do you deploy an Angular SSR app to AWS Lambda or Firebase Functions?
+262. What is the `domino` library used for in older Angular Universal?
+263. How do you replay user events during hydration?
+264. How do you handle local storage in SSR?
+265. What is the `ServerModule`?
+266. How do you optimize Critical CSS for SSR?
+267. How do you handle 404 status codes in SSR?
+268. How do you manage Title and Meta tags dynamically for SEO?
+269. What is the impact of SSR on Time to Interactive (TTI)?
+270. How do you debug a server-side Angular error?
+271. How do you use `provideClientHydration()`?
+272. What are the limitations of Hydration (e.g., custom DOM manipulation)?
+273. How do you skip hydration for specific components (`ngSkipHydration`)?
+274. How do you handle Third-Party libraries that use `document` or `window` in SSR?
+275. How do you implement Canonical URLs in Angular?
+
+### **SECTION 13 — MICRO-FRONTENDS & MONOREPO**
+276. What is a Monorepo and why use Nx with Angular?
+277. What is Module Federation (Webpack 5)?
+278. How do you share state between Micro-Frontends?
+279. How do you handle version mismatches between Micro-Frontends?
+280. What is a "Shell" application?
+281. How do you route between different Micro-Frontends?
+282. How do you share styles/CSS between Micro-Frontends?
+283. What is the difference between Build-time vs Runtime integration?
+284. How do you handle Authentication across Micro-Frontends?
+285. How do you use Web Components (Angular Elements) as Micro-Frontends?
+286. How do you optimize the build time in an Nx Monorepo?
+287. What is the "Affected" command in Nx?
+288. How do you share TypeScript interfaces across apps in a Monorepo?
+289. How do you deploy Micro-Frontends independently?
+290. What are the cons of Micro-Frontend architecture?
+291. How do you handle lazy loading a remote module?
+292. How do you manage common dependencies (e.g., RxJS, Angular Core) to avoid duplication?
+293. How do you implement a shared UI Library in a Monorepo?
+294. How do you test Micro-Frontends in isolation?
+295. How do you handle Global Error handling in a Micro-Frontend setup?
+296. What is a "Remote" vs "Host" application?
+297. How do you use Native Federation (ESBuild based)?
+298. How do you handle asset loading (images/fonts) in Micro-Frontends?
+299. How do you communicate via Custom Events?
+300. How do you structure CI/CD pipelines for Micro-Frontends?
+
+### **SECTION 14 — STYLING & ANIMATIONS**
+301. What is the difference between `:host` and `:host-context`?
+302. What is `::ng-deep` and why is it deprecated? What is the alternative?
+303. How do you create a global theme switcher (Dark/Light mode)?
+304. How do you use CSS Variables with Angular?
+305. What is the difference between SCSS `@use` vs `@import`?
+306. How do you implement Angular Animations (triggers, states, transitions)?
+307. What is the `query()` function in Angular Animations?
+308. How do you animate route transitions?
+309. How do you create a stagger animation for a list?
+310. How do you disable animations conditionally?
+311. How do you scope CSS to a component (ViewEncapsulation)?
+312. How do you include an external CSS library (Bootstrap/Tailwind)?
+313. How do you configure Tailwind CSS with Angular?
+314. How do you style a child component from a parent without `ng-deep`?
+315. What is the `:enter` and `:leave` alias in animations?
+316. How do you create a reusable Animation file?
+317. How do you use `Keyframes` in Angular animations?
+318. How do you bind a style dynamically using `[style.width.px]`?
+319. What is `ngClass` vs `[class]`?
+320. How do you create responsive designs in Angular?
+321. How do you load critical CSS inline?
+322. How do you animate a void state?
+323. How do you use the `AnimationBuilder` service?
+324. How do you debug animations?
+325. How do you replace SCSS with native CSS nesting?
+
+### **SECTION 15 — DESIGN PATTERNS & BEST PRACTICES**
+326. What is the Container vs Presenter pattern?
+327. What is the Facade Pattern and how is it used with State Management?
+328. What is the Adapter Pattern (API to UI model conversion)?
+329. What is the Singleton Pattern in Angular Services?
+330. What is the Observer Pattern?
+331. What is the Strategy Pattern (e.g., for different Validation strategies)?
+332. What is the Factory Pattern in Dependency Injection?
+333. How do you implement the "Bridge Pattern" for multiple themes?
+334. Why should you avoid logic in HTML templates?
+335. Why is `any` type bad and how do you avoid it?
+336. How do you enforce strict mode in Angular?
+337. What is the "Single Responsibility Principle" applied to Components?
+338. When should you use a Service vs a Static Utility Class?
+339. How do you name your files and folders (LIFT principle)?
+340. How do you handle "Magic Strings" and "Magic Numbers"?
+341. What is the benefit of using Immutability in Angular?
+342. How do you structure a "Shared Module" vs "Core Module"?
+343. How do you maintain a consistent coding style (ESLint / Prettier)?
+344. How do you document Angular components (Storybook / Compodoc)?
+345. How do you refactor a massive component?
+346. How do you handle technical debt in a large Angular app?
+347. What is "Component composition"?
+348. How do you avoid "Prop Drilling"?
+349. How do you separate Business Logic from UI Logic?
+350. What is the "Open/Closed Principle" in Angular Directives?
+
+### **SECTION 16 — SCENARIO BASED: CODING CHALLENGES**
+351. Write a custom pipe to format a phone number.
+352. Write a directive to auto-focus an input field on load.
+353. Create a directive that detects clicks outside an element (Dropdown close).
+354. Implement a "Copy to Clipboard" directive.
+355. Create a "Debounce Click" directive to prevent double submissions.
+356. Write a service to detect Internet connection status.
+357. Implement a "Scroll to Top" button component.
+358. Create a Countdown Timer component using RxJS.
+359. Implement a custom "Star Rating" component.
+360. Create a Data Table with sorting and pagination from scratch.
+361. Implement a "Drag and Drop" list using Angular CDK.
+362. Create a "Toast Notification" service dynamically.
+363. Implement an Image Carousel / Slider.
+364. Create a "Skeleton Loader" component.
+365. Implement a "Breadcrumb" service based on Routing.
+366. Write a recursive component to display a Tree View.
+367. Implement a "Theme Switcher" service.
+368. Create a custom Tooltip directive.
+369. Implement a generic HTTP Service with error handling.
+370. Create a "Read More / Read Less" text truncator.
+371. Implement a sticky header that hides on scroll down and shows on scroll up.
+372. Create a "Search Highlight" pipe.
+373. Implement a file drag-and-drop uploader.
+374. Create a generic modal/dialog service.
+375. Implement a "Virtual Keyboard" component.
+
+### **SECTION 17 — TOOLING, DEVOPS & CLI**
+376. What is the `angular.json` file used for?
+377. How do you use environment variables in Angular?
+378. What is the difference between `ng build` vs `ng serve`?
+379. How do you configure a proxy to avoid CORS errors (`proxy.conf.json`)?
+380. How do you upgrade an Angular version using `ng update`?
+381. What is a "Schematic" in Angular?
+382. How do you create a custom Schematic?
+383. What is the `tsconfig.json` file?
+384. How do you configure path aliases (`@core`, `@shared`)?
+385. How do you analyze bundle size limits?
+386. How do you use Docker with Angular?
+387. How do you configure Nginx to serve an Angular app?
+388. How do you handle deep linking (URL rewrite) on the server?
+389. What is the difference between JIT and AOT compilation?
+390. How do you use `npm ci` vs `npm install` in CI/CD?
+391. How do you lint Angular code with ESLint?
+392. How do you format code automatically on git commit (Husky)?
+393. How do you publish an Angular library to NPM?
+394. How do you configure Multiple Projects in one workspace?
+395. How do you use Git Hooks with Angular?
+396. How do you setup a staging environment?
+397. How do you automate versioning (Semantic Versioning)?
+398. How do you use Source Maps in production safely?
+399. How do you configure Hot Module Replacement (HMR)?
+400. How do you use `ng-packagr`?
+
+### **SECTION 18 — STATE MANAGEMENT (NgRx / Akita / Elf)**
+401. What are the key concepts of NgRx (Store, Actions, Reducers, Effects)?
+402. What is the difference between `createAction` and `props`?
+403. Why is State immutable in Redux patterns?
+404. What is a Selector and why is it memoized?
+405. How do you handle side effects in NgRx (Effects)?
+406. What is the difference between `Store` and `ComponentStore`?
+407. When should you choose NgRx over a Service-based state?
+408. How do you test Reducers?
+409. How do you test Effects?
+410. What is "Entity Adapter" in NgRx?
+411. How do you normalize nested data in the Store?
+412. What is "Time Travel Debugging"?
+413. How do you persist NgRx state to LocalStorage (Meta-Reducers)?
+414. What is the Facade pattern in NgRx?
+415. How do you handle optimistic UI updates in NgRx?
+416. What is "Router Store" in NgRx?
+417. How do you reset the state on logout?
+418. How do you handle multiple actions sequentially in Effects?
+419. How do you use `concatLatestFrom` in Effects?
+420. What is the difference between NgRx and Akita?
+421. How do you implement a "Loading" state for specific actions?
+422. How do you join data from two different feature states?
+423. What is a "Feature State" vs "Root State"?
+424. How do you reduce boilerplate in NgRx?
+425. How do you use NgRx Signal Store (modern)?
+
+### **SECTION 19 — ANGULAR MATERIAL & CDK**
+426. What is Angular CDK (Component Dev Kit)?
+427. How do you implement Virtual Scrolling with CDK?
+428. How do you create a custom Overlay (Popover/Dropdown) with CDK?
+429. How do you use the CDK Accessibility (A11y) module?
+430. How do you implement Drag and Drop with CDK?
+431. How do you create a custom Stepper?
+432. What is the "Portal" concept in CDK?
+433. How do you customize Angular Material themes (Theming SCSS)?
+434. How do you create a responsive layout with `LayoutModule`?
+435. How do you handle Date Formats in `MatDatepicker`?
+436. How do you create a custom `MatDialog`?
+437. How do you implement sorting and pagination in `MatTable`?
+438. How do you make a `MatTable` sticky header/column?
+439. How do you create a "BottomSheet" component?
+440. How do you implement "Chips" with autocomplete?
+441. How do you use `FocusTrap`?
+442. How do you create a connected overlay (Tooltip)?
+443. How do you handle Bi-directional text (RTL/LTR) with CDK?
+444. How do you implement infinite scroll on `MatSelect`?
+445. How do you customize Material Typography?
+446. How do you create a custom generic Dialog service?
+447. How do you prevent body scroll when a Modal is open?
+448. How do you use `CdkTree`?
+449. How do you implement "Clipboard" copy with CDK?
+450. How do you optimize Angular Material bundle size?
+
+### **SECTION 20 — OBSCURE & TRICKY QUESTIONS**
+451. Can `ngOnChanges` detect changes if the input object reference is the same but a property changed?
+452. Why does calling `subscribe()` inside `subscribe()` cause memory leaks?
+453. How do you manually trigger change detection without `ChangeDetectorRef`?
+454. Can you have multiple `router-outlet`s in the same template?
+455. What happens if you define the same provider in `AppModule` and a Lazy Module?
+456. How do you force a component to reload without refreshing the page?
+457. What is the difference between `providedIn: 'root'` and `providedIn: 'platform'`?
+458. Can an Angular app run without `index.html`?
+459. How do you capture an error that happens *before* Angular bootstraps?
+460. How do you make a component inherit styles from its parent in Shadow DOM?
+461. What is the `exportAs` property in Directives used for?
+462. How do you dynamically change the page favicon?
+463. Can you use Angular without TypeScript?
+464. What happens if you use `ChangeDetectionStrategy.OnPush` but mutate data directly?
+465. How do you detect when a user is idle?
+466. How do you stop a user from leaving the page (beforeunload)?
+467. How do you implement a "Singleton" service that is reset when a module is destroyed?
+468. How do you use `APP_BOOTSTRAP_LISTENER`?
+469. What is the difference between `ElementRef.nativeElement` and `Renderer2`?
+470. How do you intercept and modify specific HTML tags globally?
+471. How do you lazy load a CSS file?
+472. How do you implement "Feature Toggles"?
+473. What is the `Self` decorator in Dependency Injection?
+474. What is the `SkipSelf` decorator?
+475. What is the `Host` decorator?
+476. What is the `Optional` decorator?
+477. How do you make an HTTP request cancelable by the user?
+478. How do you detect if the browser tab is focused or backgrounded?
+479. How do you implement "Long Press" event?
+480. How do you make a component work as both a Component and a Directive?
+481. How do you use `forwardRef` and why is it needed?
+482. How do you implement a global "Http Retry" strategy for specific status codes?
+483. How do you handle "Back Button" logic in a wizard?
+484. How do you preload data before a route is activated (Resolver)?
+485. Why are Resolvers deprecated in favor of Guards/Signals?
+486. How do you detect if a device is Touch or Mouse?
+487. How do you implement a custom structural directive like `*ngIf`?
+488. How do you use `ViewEncapsulation.ShadowDom` effectively?
+489. How do you share data between two browser tabs of the same app?
+490. How do you version your API calls in Angular?
+491. How do you handle timezones in an international app?
+492. How do you use `i18n` (Internationalization) in Angular templates?
+493. How do you implement runtime translations (ngx-translate/Transloco)?
+494. How do you switch languages without reloading the page?
+495. How do you handle right-to-left (RTL) layout switching?
+496. How do you log JavaScript errors to a backend API?
+497. How do you implement a "Maintenance Mode" switch?
+498. How do you use `MutationObserver` in Angular?
+499. How do you use `IntersectionObserver` in Angular?
+500. How do you implement "Sound/Audio" feedback in Angular?
