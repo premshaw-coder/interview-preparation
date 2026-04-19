@@ -2,7 +2,6 @@
 Explain Higher Order Functions in JavaScript
 Explain closures in JavaScript
 What is a callback function?
-What are arrow functions?
 What is an Arrow Function? How is it different from a regular function?
 What is the difference between function declaration and function expression?
 What is "Callback Hell"?
@@ -29,11 +28,8 @@ Shallow copy and deep copy
 🌐 6. DOM & Browser APIs ->
 What is the DOM (Document Object Model)?
 What is event bubbling in JavaScript?
-What is Event Bubbling?
 What is event capturing?
-What is Event Capturing?
 What is event delegation?
-What is Event Delegation?
 What is preventDefault()?
 What is stopPropagation()?
 
@@ -46,8 +42,6 @@ What is Promise.race()?
 What is Promise.allSettled()?
 What is Promise.any()?
 What is async / await?
-How do you handle errors in async/await?
-What is the event loop?
 What is the call stack?
 
 ⚙️ 8. Modern JavaScript Features ->
