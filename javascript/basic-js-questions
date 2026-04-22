@@ -1,21 +1,21 @@
 Total = 34 questions
 
 1. Functions & Execution ->
-Explain Higher Order Functions in JavaScript
-Explain closures in JavaScript
-What is a callback function?
-What is an Arrow Function? How is it different from a regular function?
-What is the difference between function declaration and function expression?
-What is "Callback Hell"?
+Explain Higher Order Functions in JavaScript - important
+Explain closures in JavaScript - very important
+What is a callback function? - very important
+What is an Arrow Function? How is it different from a regular function? - very important
+What is the difference between function declaration and function expression? - important
+What is "Callback Hell"? - important
 
 🔄 2. Scope, this, and Execution Context ->
-Explain pass by value and pass by reference
-Explain the this keyword
-Explain scope and scope chain in JavaScript
-What do you understand by lexical scoping?
+Explain pass by value and pass by reference - very important
+Explain the this keyword - very important
+Explain scope and scope chain in JavaScript  - very important
+What do you understand by lexical scoping? - very important
 
 🧱 3. Variables, Hoisting & Memory ->
-What is a Temporal Dead Zone?
+What is a Temporal Dead Zone?  - very important
 Explain the concept of hoisting in JavaScript
 
 🔢 4. Data Types & Type System ->
@@ -25,11 +25,11 @@ What is type coercion? Give an example
 What are falsy values in JavaScript?
 
 📦 5. Objects & Memory Management ->
-Shallow copy and deep copy
+Shallow copy and deep copy - very important
 
 🌐 6. DOM & Browser APIs ->
-What is the DOM (Document Object Model)?
-What is event bubbling in JavaScript?
+What is the DOM (Document Object Model)? - very important
+What is event bubbling in JavaScript? - important
 What is event capturing?
 What is event delegation?
 What is preventDefault()?
@@ -43,8 +43,8 @@ What is Promise.race()?
 What is Promise.allSettled()?
 What is Promise.any()?
 What is async / await?
-How does the JavaScript event loop work, and what role do the call stack, task queue, and microtask queue play in it?
-What is the call stack?
+How does the JavaScript event loop work, and what role do the call stack, task queue, and microtask queue play in it? - very important
+What is the call stack? - very important
 
 ⚙️ 8. Modern JavaScript Features ->
 What is the role of defer and async scripts in JavaScript?
