@@ -36,7 +36,6 @@ What is preventDefault()?
 What is stopPropagation()?
 
 ⚡ 7. Async JavaScript & Event Loop ->
-How does the JavaScript event loop work, and what role do the call stack, task queue, and microtask queue play in it?
 What are Promises in JavaScript?
 What are the states of a Promise?
 What is Promise.all()?
@@ -44,6 +43,7 @@ What is Promise.race()?
 What is Promise.allSettled()?
 What is Promise.any()?
 What is async / await?
+How does the JavaScript event loop work, and what role do the call stack, task queue, and microtask queue play in it?
 What is the call stack?
 
 ⚙️ 8. Modern JavaScript Features ->
