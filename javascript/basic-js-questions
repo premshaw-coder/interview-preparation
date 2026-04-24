@@ -1,4 +1,4 @@
-Total = 34 questions
+Total = 36 questions
 
 1. Functions & Execution ->
 Explain Higher Order Functions in JavaScript - important
@@ -48,7 +48,9 @@ What is the call stack? - very important
 
 ⚙️ 8. Modern JavaScript Features ->
 What is the role of defer and async scripts in JavaScript?
-What is the rest parameter and spread operator?
+What is Prototypal Inheritance?
+What is the Prototype Chain?
+What is `__proto__` vs `prototype`?
 
 
 
